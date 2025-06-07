@@ -9,7 +9,7 @@ export const products: Product[] = [
   // Produk Awal Kategori Pengetahuan Mistik
   {
     id: 'mk001',
-    name: 'Gulungan Rune Kuno',
+    name: 'Gemblengan Ilmu Hikmah',
     description: 'Bongkar bahasa & simbol kekuatan kuno pakai gulungan keren yang dibuat mirip aslinya ini.',
     detailedDescription: 'Gulungan ini isinya panduan lengkap soal alfabet runic kuno, artinya, sama cara pakainya buat ritual sihir. Dibuat di atas perkamen imitasi dan dibikin keliatan tua biar otentik, gulungan ini cocok buat pajangan keren sekaligus alat buat yang lagi belajar ilmu misterius. Katanya sih, cuma dengan jiplak rune-nya aja udah bisa ngebuka kemampuan intuitif yang terpendam. Ukuran: 30cm x 100cm (kalau dibuka). Bahan: Perkamen sintetis kualitas oke, rol kayu.',
     price: 799900,
