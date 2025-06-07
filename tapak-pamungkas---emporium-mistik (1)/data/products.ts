@@ -9,19 +9,19 @@ export const products: Product[] = [
   // Produk Awal Kategori Pengetahuan Mistik
   {
     id: 'mk001',
-    name: 'Gemblengan Ilmu Hikmah',
-    description: 'Bongkar bahasa & simbol kekuatan kuno pakai gulungan keren yang dibuat mirip aslinya ini.',
-    detailedDescription: 'Gulungan ini isinya panduan lengkap soal alfabet runic kuno, artinya, sama cara pakainya buat ritual sihir. Dibuat di atas perkamen imitasi dan dibikin keliatan tua biar otentik, gulungan ini cocok buat pajangan keren sekaligus alat buat yang lagi belajar ilmu misterius. Katanya sih, cuma dengan jiplak rune-nya aja udah bisa ngebuka kemampuan intuitif yang terpendam. Ukuran: 30cm x 100cm (kalau dibuka). Bahan: Perkamen sintetis kualitas oke, rol kayu.',
-    price: 799900,
-    stock: 15,
+    name: 'Pengaktifan Ajian Mahkota Raja Iblis',
+    description: 'Ilmu yang setengah kiri keras, ekstrem, dan memiliki pengalaman segala niat. Posisi yang tersedia meliputi pengisian, pelet, kekuatan, kerezekian, dan segala niat untuk mengisi khodam banaspati, succubus, gondiruwo, iblus, macan, jawara, naga, vampir, dan segala niat untuk segala fungsi. Penyusunan segala penyakit, nagi hutang, kirim balik Santet, kesuksesan, puter giling, pagar goib, pelarisan, super, buat segala media, pesugian, dan ribuan macam fungsi lagi. Mantra sangat pendek. Dan cukup niat apa mantra 3x.',
+    detailedDescription: 'Ilmu Tanpa Pantangan, Tanpa efek Samping, energi Super Jos, Tanpa Ritual Yang Memberatkan',
+    price: 150000,
+    stock: 165,
     category: ProductCategory.PENGETAHUAN_MISTIK,
     images: [
-      'https://drive.usercontent.google.com/download?id=1ZfG3SGVncB-MnsBKGSSXBf4NRn2Os1Pd&export=view',
-      'https://www.playbook.com/s/haris-musafa/NikXJXyZa4T6A43jqSrQ9DJD?assetToken=X159YMVcQ7y5isRyyVNfjZgi',
-      'https://picsum.photos/seed/mk001_detail2/600/600',
+      'https://i.ibb.co/pjNjJFnq/20220518-154306.jpg',
+      'https://i.ibb.co/pvbsgBH1/20220518-154032.jpg',
+      'https://i.ibb.co/SX2FpH69/Whats-App-Image-2024-09-08-at-16-38-45-eeff91e8.jpg',
     ],
     featured: true,
-    material: "Perkamen Sintetis, Kayu",
+    material: "3 Buah kapsul pengaktifan, kertas panduan",
     origin: "Terinspirasi Juru Tulis Eldoria"
   },
   {
