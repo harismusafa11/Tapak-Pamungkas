@@ -17,7 +17,7 @@ export const products: Product[] = [
     category: ProductCategory.PENGETAHUAN_MISTIK,
     images: [
       'https://www.playbook.com/s/haris-musafa/NikXJXyZa4T6A43jqSrQ9DJD?assetToken=X159YMVcQ7y5isRyyVNfjZgi',
-      'https://drive.google.com/uc?export=view&id=1xUCxhFeJGfbzjpAPOmYcARHs3nfJDTIR',
+      'https://www.playbook.com/s/haris-musafa/NikXJXyZa4T6A43jqSrQ9DJD?assetToken=X159YMVcQ7y5isRyyVNfjZgi',
       'https://picsum.photos/seed/mk001_detail2/600/600',
     ],
     featured: true,
