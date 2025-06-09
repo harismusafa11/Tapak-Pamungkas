@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '../ui/Icon';
+import React, { useState, useEffect } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon, SparklesIcon } from '../ui/Icon';
 
 interface ImageSliderProps {
   images: string[];
@@ -9,10 +9,25 @@ interface ImageSliderProps {
 
 export const ImageSlider: React.FC<ImageSliderProps> = ({ images, altText }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  // State untuk melacak error per gambar: Record<urlGambar, boolean (hasError)>
+  const [imageErrorStatus, setImageErrorStatus] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    // Reset error status jika gambar atau currentIndex berubah (misalnya, gambar baru dimuat)
+    // Ini penting agar error dari gambar sebelumnya tidak terbawa ke gambar baru di index yang sama
+    if (images && images.length > 0 && images[currentIndex]) {
+        // Hanya reset error untuk gambar saat ini jika belum pernah dicoba atau tidak error
+        // Ini mencegah loop jika gambar memang error permanen
+        if (imageErrorStatus[images[currentIndex]] === undefined || imageErrorStatus[images[currentIndex]] === false) {
+           setImageErrorStatus(prevStatus => ({ ...prevStatus, [images[currentIndex]]: false }));
+        }
+    }
+  }, [currentIndex, images]); // Dependency array diubah untuk lebih tepat
+
 
   if (!images || images.length === 0) {
     return (
-      <div className="w-full aspect-square bg-gray-700 flex items-center justify-center text-text-secondary rounded-lg"> {/* Changed from aspect-w-1 aspect-h-1 */}
+      <div className="w-full aspect-square bg-brand-secondary/30 flex items-center justify-center text-text-secondary rounded-lg">
         Yah, Gambarnya Nggak Ada
       </div>
     );
@@ -36,14 +51,36 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images, altText }) => 
     setCurrentIndex(slideIndex);
   };
 
+  const handleImageError = (src: string) => {
+    console.warn(`[ImageSlider] Gagal memuat gambar: ${src} untuk slider "${altText}"`);
+    setImageErrorStatus(prevStatus => ({ ...prevStatus, [src]: true }));
+  };
+  
+  const currentImageSrc = displayImages[currentIndex];
+  const hasErrorForCurrentSlide = imageErrorStatus[currentImageSrc];
+
+  const ImagePlaceholder: React.FC<{isError?: boolean}> = ({ isError = false }) => (
+    <div className="w-full h-full object-cover object-center bg-brand-secondary/50 flex flex-col items-center justify-center text-text-secondary p-4 rounded-lg">
+      <SparklesIcon className="w-16 h-16 mb-2 opacity-60" />
+      <p className="text-center">{isError ? "Gambar slide ini rusak" : "Gambar tidak tersedia"}</p>
+    </div>
+  );
+
+
   return (
-    <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl"> {/* Changed from aspect-w-1 aspect-h-1 */}
+    <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl">
       <div className="w-full h-full">
-        <img 
-          src={displayImages[currentIndex]} 
-          alt={`${altText} - ${currentIndex + 1}`} 
-          className="w-full h-full object-cover object-center transition-opacity duration-500 ease-in-out"
-        />
+        {hasErrorForCurrentSlide || !currentImageSrc ? (
+          <ImagePlaceholder isError={!!hasErrorForCurrentSlide} />
+        ) : (
+          <img 
+            src={currentImageSrc} 
+            alt={`${altText} - ${currentIndex + 1}`} 
+            className="w-full h-full object-cover object-center transition-opacity duration-500 ease-in-out"
+            onError={() => handleImageError(currentImageSrc)}
+            loading="lazy"
+          />
+        )}
       </div>
       {displayImages.length > 1 && (
         <>

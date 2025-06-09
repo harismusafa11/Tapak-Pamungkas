@@ -1,6 +1,6 @@
 export enum ProductCategory {
-  PENGETAHUAN_MISTIK = "Pengetahuan Mistik",
-  MEDIA_BERJIMAT = "Media Berjimat",
+  KEILMUAN_SPIRITUAL = "Keilmuan Spiritual",
+  MEDIA_BERTUAH = "Media Bertuah",
 }
 
 export interface Product {
@@ -14,8 +14,7 @@ export interface Product {
   images: string[]; // URLs of product images, first is primary
   featured?: boolean;
   dimensions?: string; // e.g. "10cm x 5cm x 2cm"
-  material?: string; // e.g. "Silver, Amethyst"
-  origin?: string; // e.g. "Ancient Tomb of Eldoria"
+  material?: string; // Describes "Yang didapatkan dalam paket"
 }
 
 export interface FaqItem {

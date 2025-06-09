@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getProductById } from '../data/products';
-import { Product } from '../types';
+import { Product, ProductCategory } from '../types';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
 import { ImageSlider } from '../components/products/ImageSlider';
 import { Button } from '../components/ui/Button';
@@ -48,7 +48,7 @@ export const ProductDetailPage: React.FC = () => {
     );
   }
 
-  const whatsappMessage = `Halo ${STORE_NAME}, aku naksir nih sama produk ini: ${product.name} (ID: ${product.id}). Mau tanya-tanya dong!`;
+  const whatsappMessage = `Halo ${STORE_NAME}, aku naksir nih sama produk ini: ${product.name} (ID: ${product.id}). Ada diskon Rp 15.000 kan? Mau tanya-tanya dong!`;
   const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -65,7 +65,7 @@ export const ProductDetailPage: React.FC = () => {
             to={`/category/${CATEGORIES_SLUGS[product.category]}`} 
             className="text-sm text-brand-accent hover:underline flex items-center"
           >
-            {product.category === "Pengetahuan Mistik" ? <AcademicCapIcon className="w-4 h-4 mr-1" /> : <SparklesIcon className="w-4 h-4 mr-1" />}
+            {product.category === ProductCategory.KEILMUAN_SPIRITUAL ? <AcademicCapIcon className="w-4 h-4 mr-1" /> : <SparklesIcon className="w-4 h-4 mr-1" />}
             {product.category}
           </Link>
           <h1 className="text-4xl lg:text-5xl font-bold text-text-primary font-serif">{product.name}</h1>
@@ -81,6 +81,15 @@ export const ProductDetailPage: React.FC = () => {
             )}
           </div>
 
+          {/* Discount Banner */}
+          <div className="my-6 p-4 bg-gradient-to-r from-brand-accent via-red-500 to-red-700 text-white rounded-lg shadow-lg flex items-center space-x-3 animate-subtle-pulse">
+            <TagIcon className="w-8 h-8 flex-shrink-0" />
+            <div>
+              <h3 className="font-bold text-lg sm:text-xl">DISKON SPESIAL!</h3>
+              <p className="text-sm sm:text-base">Dapatkan potongan harga Rp 15.000 untuk produk ini!</p>
+            </div>
+          </div>
+
           <p className="text-text-secondary leading-relaxed text-lg">{product.description}</p>
           
           <div className="border-t border-b border-brand-secondary/50 py-6 my-6 space-y-4">
@@ -90,19 +99,13 @@ export const ProductDetailPage: React.FC = () => {
             {product.material && (
               <div className="flex items-center text-sm text-text-secondary">
                 <CubeIcon className="w-5 h-5 mr-2 text-brand-accent" />
-                <strong>Bahannya:</strong>&nbsp;{product.material}
+                <strong>Isi Paket:</strong>&nbsp;{product.material}
               </div>
             )}
             {product.dimensions && (
               <div className="flex items-center text-sm text-text-secondary">
                 <TagIcon className="w-5 h-5 mr-2 text-brand-accent" />
                 <strong>Ukurannya:</strong>&nbsp;{product.dimensions}
-              </div>
-            )}
-             {product.origin && (
-              <div className="flex items-center text-sm text-text-secondary">
-                <SparklesIcon className="w-5 h-5 mr-2 text-brand-accent" />
-                <strong>Asalnya:</strong>&nbsp;{product.origin}
               </div>
             )}
           </div>
@@ -119,7 +122,7 @@ export const ProductDetailPage: React.FC = () => {
             </Button>
           )}
           <p className="text-xs text-text-secondary text-center mt-2">
-            FYI: Ordernya langsung lewat WhatsApp ya, biar ngobrolnya lebih enak dan personal!
+            FYI: Ordernya langsung lewat WhatsApp ya, biar ngobrolnya lebih enak dan personal! (Jangan lupa sebutin diskonnya!)
           </p>
         </div>
       </div>

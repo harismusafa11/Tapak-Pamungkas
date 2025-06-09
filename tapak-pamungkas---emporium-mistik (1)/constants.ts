@@ -5,13 +5,13 @@ export const WHATSAPP_NUMBER = "6285880231697";
 export const STORE_NAME = "Tapak Pamungkas";
 
 export const CATEGORIES_SLUGS: Record<string, string> = {
-  [ProductCategory.PENGETAHUAN_MISTIK]: "pengetahuan-mistik",
-  [ProductCategory.MEDIA_BERJIMAT]: "media-berjimat",
+  [ProductCategory.KEILMUAN_SPIRITUAL]: "keilmuan-spiritual",
+  [ProductCategory.MEDIA_BERTUAH]: "media-bertuah",
 };
 
 export const SLUGS_TO_CATEGORIES: Record<string, string> = {
-  "pengetahuan-mistik": ProductCategory.PENGETAHUAN_MISTIK,
-  "media-berjimat": ProductCategory.MEDIA_BERJIMAT,
+  "keilmuan-spiritual": ProductCategory.KEILMUAN_SPIRITUAL,
+  "media-bertuah": ProductCategory.MEDIA_BERTUAH,
 };
 
 export const MARKETPLACE_LINKS: MarketplaceLink[] = [

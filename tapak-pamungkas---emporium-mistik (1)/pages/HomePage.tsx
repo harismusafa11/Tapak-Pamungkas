@@ -49,7 +49,7 @@ export const HomePage: React.FC = () => {
               Yuk, bongkar rahasia misteri! Temukan ilmu mistik langka & barang bertuah yang oke punya di sini.
             </p>
             <div className="space-x-4">
-              <Link to={`/category/${CATEGORIES_SLUGS[ProductCategory.PENGETAHUAN_MISTIK]}`}>
+              <Link to={`/category/${CATEGORIES_SLUGS[ProductCategory.KEILMUAN_SPIRITUAL]}`}>
                 <Button variant="primary" size="lg" leftIcon={<SparklesIcon className="h-5 w-5"/>}>
                   Lihat Koleksi Kerennya
                 </Button>
@@ -86,15 +86,15 @@ export const HomePage: React.FC = () => {
         <SectionTitle title="Kepoin Dunia Kita Yuk!" subtitle="Cek koleksi spesial kita yang pas banget buat petualangan mistikmu." />
         <div className="grid md:grid-cols-2 gap-10">
           <CategoryShowcaseCard 
-            title={ProductCategory.PENGETAHUAN_MISTIK}
+            title={ProductCategory.KEILMUAN_SPIRITUAL}
             description="Ilmu kuno, rahasia yang hampir hilang, dan panduan praktis buat nambah wawasan & nguasain ilmu gaib."
-            linkTo={`/category/${CATEGORIES_SLUGS[ProductCategory.PENGETAHUAN_MISTIK]}`}
+            linkTo={`/category/${CATEGORIES_SLUGS[ProductCategory.KEILMUAN_SPIRITUAL]}`}
             icon={<AcademicCapIcon className="w-16 h-16" />}
           />
           <CategoryShowcaseCard 
-            title={ProductCategory.MEDIA_BERJIMAT}
+            title={ProductCategory.MEDIA_BERTUAH}
             description="Barang sakti, jimat pelindung, dan alat buat ngeramal, udah diisi energi khusus buat ngebantu kerjaan spiritualmu."
-            linkTo={`/category/${CATEGORIES_SLUGS[ProductCategory.MEDIA_BERJIMAT]}`}
+            linkTo={`/category/${CATEGORIES_SLUGS[ProductCategory.MEDIA_BERTUAH]}`}
             icon={<SparklesIcon className="w-16 h-16" />} 
           />
         </div>

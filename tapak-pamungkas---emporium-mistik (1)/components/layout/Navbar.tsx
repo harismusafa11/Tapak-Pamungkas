@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { STORE_NAME, CATEGORIES_SLUGS } from '../../constants';
 import { NavLinkItem, ProductCategory } from '../../types';
-import { MenuIcon, XIcon, ChevronDownIcon, SparklesIcon, SearchIcon } from '../ui/Icon';
+import { MenuIcon, XIcon, ChevronDownIcon, SearchIcon } from '../ui/Icon'; // SparklesIcon removed from here if only used for logo
 
 const navLinks: NavLinkItem[] = [
   { label: "Beranda", path: "/" },
@@ -12,8 +11,8 @@ const navLinks: NavLinkItem[] = [
     path: "#", 
     isDropdown: true,
     dropdownItems: [
-      { label: ProductCategory.PENGETAHUAN_MISTIK, path: `/category/${CATEGORIES_SLUGS[ProductCategory.PENGETAHUAN_MISTIK]}` },
-      { label: ProductCategory.MEDIA_BERJIMAT, path: `/category/${CATEGORIES_SLUGS[ProductCategory.MEDIA_BERJIMAT]}` },
+      { label: ProductCategory.KEILMUAN_SPIRITUAL, path: `/category/${CATEGORIES_SLUGS[ProductCategory.KEILMUAN_SPIRITUAL]}` },
+      { label: ProductCategory.MEDIA_BERTUAH, path: `/category/${CATEGORIES_SLUGS[ProductCategory.MEDIA_BERTUAH]}` },
     ]
   },
   { label: "Tentang Kita", path: "/about" },
@@ -127,7 +126,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center text-xl sm:text-2xl font-bold text-brand-accent font-serif hover:opacity-80 transition-opacity">
-              <SparklesIcon className="h-8 w-8 mr-2" />
+              <img src="https://i.ibb.co/XxpzTXQk/logotp.png" alt={`Logo ${STORE_NAME}`} className="h-10 w-10 mr-2 object-contain" />
               {STORE_NAME}
             </Link>
           </div>

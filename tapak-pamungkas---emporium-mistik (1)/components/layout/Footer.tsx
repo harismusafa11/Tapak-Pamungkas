@@ -1,13 +1,14 @@
 import React from 'react';
 import { STORE_NAME, MARKETPLACE_LINKS } from '../../constants';
-import { SparklesIcon } from '../ui/Icon'; 
+// SparklesIcon might still be used elsewhere, or can be removed if only for logo
+// import { SparklesIcon } from '../ui/Icon'; 
 
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-primary border-t border-brand-secondary text-text-secondary py-12">
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center mb-6">
-          <SparklesIcon className="h-8 w-8 mr-2 text-brand-accent" />
+          <img src="https://i.ibb.co/XxpzTXQk/logotp.png" alt={`Logo ${STORE_NAME}`} className="h-10 w-10 mr-2 object-contain" />
           <p className="text-xl font-bold text-brand-accent font-serif">{STORE_NAME}</p>
         </div>
         
