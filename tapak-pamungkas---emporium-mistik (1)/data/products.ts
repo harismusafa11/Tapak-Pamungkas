@@ -1227,6 +1227,151 @@ export const products: Product[] = [
     material: "6 buah kapsul, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
   },
+    {
+    id: 'cm023',
+    name: 'Blangkon Booster Paranormal Dukun',
+    description: 'Blangkon mahkota dukun / paranormal, diisi puluhan khodam berfungsi untuk pulung dukun agar menjadi dukun/paranormal sukses. Juga berfungsi sebagai power energi dari semua ritual, semua produk yang kita buat, dan semua masalah pasien yang kita tangani bisa berhasil. Cukup dipakai saat wirid atau ritual apapun. Selain itu, blangkon ini juga berfungsi untuk menghilangkan sial sangkal, sengkolo, dan apes, serta membuka pintu kesuksesan, kekayaan, keberhasilan, dan keberuntungan dalam segala hal terutama sukses dalam dunia perdukunan atau paranormal. Bebas agama, bebas pantangan.',
+    price: 450000,
+    stock: 20,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/PZ7VKnpk/Whats-App-Image-2025-06-08-at-20-39-22-d7bf3af2.jpg',
+      'https://i.ibb.co/5hhgzjWP/Whats-App-Image-2025-06-08-at-20-39-22-38d903e0.jpg',
+    ],
+    material: "1 buah blangkon, kertas panduan lengkap",
+    detailedDescription: 'preorder 5-7 hari untu proses bikinnya sesuai nama pemahar, tanpa pantangan, tanpa puasa'
+  },
+    {
+    id: 'cm024',
+    name: 'Piramid Media Paranormal Untuk Ritual',
+    description: 'Dalam dunia supranatural atau dunia paranormal, miniatur piramida bisa kita fungsikan untuk segala hajat atau segala kepentingan dalam ritual. Bahkan banyak paranormal di dunia yang menggunakan media piramida ini sebagai media ritual, di Indonesia juga ada paranormal pelet yang kondang saat melakukan ritual pelet dia hanya menggunakan piramida sebagai media utama. Anda juga bisa mencari referensi tentang fungsi magic dari piramid tiruan atau miniatur piramida Mesir ini di Google. Ini adalah produk berupa miniatur piramida yang sudah di-ritualkan atau diselaraskan energinya, juga diisi puluhan sampai ratusan jin agar mempunyai kekuatan mustik yang hampir sama dengan piramida aslinya. Fungsi dari media piramid adalah untuk ritual apapun, baik untuk pribadi maupun untuk pasien, untuk ritual pelet super ekstrim, untuk mengisi benda segala hajat keperluan, mengembalikan khodam dr benda yang telah hilang, menyempurnakan benda yang sudah kita isi agar sempurna, membuat air/minyak penyembuhan, membuat minyak pelet super jooss, menarik pembeli, kerezekian, dan segala niat atau hajat kita. Untuk mengisi/menyempurnakan isian/mengebalikan khodam cukup taruh di dalam piramid selama beberapa hari maka benda akan terisi energi/khodam secara otomatis. Membuat minyak pelet atau apa saja yang kita niatkan akan aktif sendiri dan full power sesuai niat kita. Untuk pelet masukan foto laki-laki dan perempuan di dalam piramid dan biarkan di situ 3-7 hari, pasien cukup panggil nama target tunggu target akan gila sendiri atau akan mencari kita melet atau kita bantu. Untuk membuat uang asma, pelarisan, masukan uang di dalam piramid, maka uang sudah terisi energi penarik rezeki dari segala arah, atau jika punya hajat apa saja mintak nomor togel, atau agar urusan berhasil, mengancurkan musuh (santet), atau apa saja cukup masukan dalam piramid dan sebut semua keinginan anda, tunggu sebuah keajaiban tentang keberhasilan anda. Untuk menguji daya magis dari piramid ambil pisau kecil/silet yang tumpul, masukan di dalam piramid tunggu beberapa hari, setelah itu ambil dan tes. Pisau atau silet yang semula tumpul akan menjadi tajam dengan sendirinya. Masih banyak lagi fungsi lainnya (1001 masalah) yang bisa digunakan media piramid ini, semua keberhasilan adalah ijin Allah. **INI HANYA MEDIA SEBAGAI SARANA TAMBAHAN DALAM RITUAL BUKAN SARANA YANG BISA ANDA MINTAI BANTUAN.',
+    price: 450000,
+    stock: 11,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/JRpMnHZ2/20230929-162240.jpg',
+      'https://i.ibb.co/Z4QgPJn/20230929-162616.jpg',
+      'https://i.ibb.co/YBWGx60F/20230929-162326.jpg',
+    ],
+    material: "1 buah piramid, 1 bbotol minyak perawatan, kertas panduan lengkap",
+    detailedDescription: 'preorder 5-7 hari untu proses bikinnya sesuai nama pemahar, tanpa pantangan, tanpa puasa'
+  },
+    {
+    id: 'cm025',
+    name: 'Minyak Pelarisan Omyang Jimbe',
+    description: 'Minyak Pelarisan Umyang Jimbe adalah minyak yang dihuni oleh 2 khodam bayi suci. Minyak ini dirancang khusus untuk pelarisan berbagai jenis usaha, seperti pedagang warung, kios, kaki lima, maupun keliling. Cara pemakaiannya cukup mudah: oleskan minyak ini ke tempat Anda menjual barang atau jasa, lalu bacalah doa pendek sebelum mengoleskan minyak tersebut. Minyak ini bebas dari pantangan apa pun, sehingga dapat langsung digunakan tanpa syarat tambahan. **Mahar: Rp100.000**.',
+    price: 100000,
+    stock: 20,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/99Sf1vy5/20211125-080450.jpg',
+      'https://i.ibb.co/3YSVftj2/20211202-192946.jpg',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+    {
+    id: 'cm026',
+    name: 'Yant Amulet Birahi',
+    description: 'Pengasihan umum, menundukan semua lawan jenis, mempengarruhi pikiran lawan jenis agar terpesona dan nafsu birahinya bangkit, juga pemakai yant inii akan mempunyai daya pancaran pengasihan yang luar biasa bagi siapa saja yang melihatnya',
+    price: 250000,
+    stock: 97,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/nMB1DQnX/IMG-20210718-190404.jpg',
+      'https://i.ibb.co/N2JbHKD5/IMG-20210718-190426.jpg',
+      'https://i.ibb.co/R43wMq37/IMG-20210718-190401.jpg',
+    ],
+    material: "1 buah yant, 3 buah dupa, kertas panduan lengkap",
+    detailedDescription: 'preorder 3 hari, tanpa pantangan, tanpa puasa, perawatan bakari dupa,'
+  },
+    {
+    id: 'cm027',
+    name: 'Minyak Raja Pelet Super',
+    description: 'Minyak ini gabungan dari pelet Jawa, hikmah, Melayu, pelat Dayak Kalimantan, dan pelet Thailand dengan racikan yang sangat khusus. Bisa untuk pelet segala cara, termasuk jabat tangan, towelan, tatapan mata, pelet jarak jauh, pelet lewat foto, pelet lewat bekas pakaian, dll. Tuah peletnya sangat ampuh baik untuk pria maupun wanita, dengan aura pemikat, pengasihan, pemanis diri, dan pesona pemikat siapa saja terutama lawan jenis dengan kadar tingkat tinggi—siapa saja yang melihat Anda langsung bisa kesengsem, naksir, atau kepinycut. Kunci pasangan tingkat tinggi, pasangan dibuat tunduk, takluk, manut, miturut, sujud, dan patuh pada Anda. Pegangan ampuh untuk para purel, pijat, pekerja hiburan malam, istri muda, ayam kampus, simpanan, dan sebagainya agar siapapun selalu menurut dan royal. Pengeretan tingkat tinggi. Minyak ini memiliki tuah pelet tingkat tinggi dan unik, tanpa perlu dioles kepada target, cukup dengan niat saja sudah bisa menaklukan dan menjerat rasa cinta lawan jenis siapa saja yang Anda inginkan. Aura pengasihan segala arah yang tak terbantahkan, tiada lawan dalam hal tebar pesona tingkat tinggi. Penakluk orang yang sombong dan angkuh. Sarana ampuh buat melanggengkan rumah tangga. Ampuh buat pegangan para pekerja bidang apapun. Bisa juga digunakan untuk pelet media foto. Membangkitkan birahi siapa saja yang diinginkan, jika sudah kena oles minyak ini, maka target akan selalu birahi dan sangean kepada Anda. Penakluk orang yang sombong dan angkuh. Ampuh untuk pegangan para pekerja entertainer bidang apapun, dll.',
+    price: 250000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/x8DGdkv6/20210626-083238.jpg',
+      'https://i.ibb.co/Xff5RhPr/IMG-20210626-082923.jpg',
+      'https://i.ibb.co/35BTfCVF/IMG-20210626-082935.jpg',
+    ],
+    material: "1 botol minyak,3 buah dupa, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+    {
+    id: 'cm028',
+    name: 'Minyak Samber Nyawa Ekstream',
+    description: 'Minyak Samber Nyawa Extreams adalah minyak yang dirancang untuk membantu Anda membalas dendam terhadap orang-orang yang telah menyakitimu baik itu cewek cowok mantan kekasih atau siapa pun yang pernah menyakitimu dengan menggunakan minyak ini kamu bisa membalas dendammu kepada mereka melalui niat dan tujuan yang jelas efeknya sangat ekstrem tetapi harus digunakan dengan bijak dan hanya ketika kamu benar-benar disakiti jika digunakan untuk menyakiti orang yang tidak bersalah minyak ini tidak akan berfungsi minyak ini sangat ampuh dalam memberikan balasan sesuai dengan niatmu baik itu membuat orang tersebut sakit hancur atau mengalami hal-hal negatif lainnya namun penting untuk diingat bahwa penggunaannya harus bertanggung jawab dan hanya digunakan sebagai bentuk pertahanan diri sedangkan cara pemakaian nanti akan ada panduan khusus yang disertakan dan ingatlah bahwa TIDAK ADA DENDAM JIKA TIDAK DISAKITI.',
+    price: 150000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/SDHLTfZZ/20210806-075032.jpg',
+      'https://i.ibb.co/QW9ySGx/IMG-20210806-074623.jpg',
+      'https://i.ibb.co/F4GRh9YF/IMG-20210806-074703.jpg',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+    {
+    id: 'cm029',
+    name: 'Garam + Gula Sarana Pelarisan Dagang',
+    description: 'Garam dan gula hasil ritual yang dirancang khusus sebagai sarana pelarisan untuk warung, toko, kios, dll. Insha Allah, dengan menggunakan media ini, Anda akan merasakan perbedaan sebelum dan sesudah memakainya. Cara pemakaian cukup taburkan di tempat jualan Anda, lalu biarkan di sana dan lihat hasilnya. **NB: Tidak bisa untuk jualan online.**',
+    price: 50000,
+    stock: 77,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/LdKMsfwM/20211004-103831.jpg',
+    ],
+    material: "garam+gula, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+    {
+    id: 'cm030',
+    name: 'Stiker Ajaib Sarana Kerezekian',
+    description: 'Hasil ritual dan berinovasi dalam ilmu ghoib di bidang rezeki akhirnya kami menemukan metode sangat akurat untuk melancarkan rezeki atau mendatangkan uang dengan cara cepat tepat dan pasti secara alami anda cukup tempelkan stiker dari saya pada lembaran uang 50 ribu 100 ribu kemudian bacalah kata-kata di dalam stiker yang telah ditempelkan di uang tersebut simpan uang tersebut dalam dompet lalu jadikan sebagai media penarik rezeki dan penarik uang yang berkapasitas energi dasyat ini akan mengantarkan anda pada perubahan hidup dan perubahan keuangan semakin sering anda membaca tulisan stiker pada uang tersebut semakin cepat anda akan merasakan perubahan keuangan anda tidak perlu memikirkan dari mana uang itu datang karena yang terpenting adalah membaca tulisan stiker pada uang yang sudah ditempelkan stiker dari saya dengan demikian anda akan heran dengan datangnya rezeki tak terduga dalam hidup anda.',
+    price: 50000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/8DtjxqxP/20211004-123917.jpg',
+    ],
+    material: "2 stiker, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+   {
+    id: 'cm031',
+    name: 'Minyak Angker Pembuka Mata Batin',
+    description: 'Minyak Angker adalah minyak khusus yang diolah dengan ritual khusus. Fungsi dari minyak ini adalah untuk membuka mata batin dan terawangan, serta apabila dioles di kelopak mata, Anda akan melihat beberapa sosok makhluk tak kasat mata seperti kuntulanak, tuyul, gendorueo, pocong, dll. Dengan ramuan ini, pembukaan mata batin Anda akan cepat terbuka, cocok sekali bagi Anda yang kesulitan membuka mata batin. Selain membuka mata batin, minyak ini juga bisa mengaktifkan seluruh cakra yang ada di tubuh manusia dengan cepat dan teknik tertentu.',
+    price: 100000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/XZG6hd2f/20210730-105729.jpg',
+      'https://i.ibb.co/2YcXS1xH/20220820-192116.jpg',
+      'https://i.ibb.co/1fNHKMXV/IMG-20210613-033253.jpg',
+      'https://i.ibb.co/LdXbQJtr/IMG-20210613-032753.jpg',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+   {
+    id: 'cm032',
+    name: 'Minyak Pembuka Mata Batin',
+    description: 'Minyak ini adalah pengabungan dari berbagai macam ilmu pembuka mata batin. Insya Allah bagi yang belum bisa membuka mata batin atau kesulitan dalam ilmu pembukaan mata batin trawangan, dengan minyak ini akan berhasil asal mematuhi tata cara dengan benar dalam panduannya. Ada penyelarasan dan bacaan khusus dalam penggunaan minyak ini.',
+    price: 150000,
+    stock: 52,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/ZzKRj8rz/matabatinmy1.jpg',
+      'https://i.ibb.co/qYqPyK5y/matabatinmy2.jpg',
+      'https://i.ibb.co/s9TdPKvg/matabatinmy3.jpg',
+    ],
+    material: "1 botol minyak,3 buah dupa, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
 
 ];
 
