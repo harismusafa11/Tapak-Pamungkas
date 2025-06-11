@@ -901,6 +901,38 @@ export const products: Product[] = [
     ],
     material: "3 buah kapsul pengaktifan, Buku Panduan Lengkap",
   },
+  {
+    id: 'mk061',
+    name: 'Program Pengaktfan Mantra Pelet Pribadi' ,
+    description: 'Ilmu pelet ini bisa digunakan oleh pria maupun wanita namun hanya untuk kepentingan pribadi dan tidak bisa digunakan untuk membantu pasien, jika ingin digunakan untuk pasien maka harus dimasukkan ke dalam berbagai media seperti bedak, lipstik, parfum, air untuk membasuh muka, arah angin, mimpi, merica jantan, rokok, makanan, atau minuman yang bertujuan untuk menundukkan lawan jenis agar tergila-gila, tunduk, sayang, dan suka pada Anda siang dan malam, serta sangat ampuh digunakan baik siang maupun malam hari melalui berbagai cara yang praktis dan efektif.',
+    detailedDescription: 'Tanpa Puasa, Langsung Aktif, tanpa ritual yang memberatkan',
+    price: 100000,
+    stock: 122,
+    category: ProductCategory.KEILMUAN_SPIRITUAL,
+    images: [
+      'https://i.ibb.co/tMSDQ1mn/free-image-resizer-cropper-6.png',
+      'https://i.ibb.co/212mgywr/2.jpg',
+      'https://i.ibb.co/cSwwr4HL/free-image-resizer-cropper-7.png',
+    ],
+    material: "3 buah kapsul pengaktifan, Buku Panduan Lengkap",
+  },
+  {
+    id: 'mk062',
+    name: 'Gemblengan Grand Master Paranormal Instan Dapat Serifikat' ,
+    description: 'Gemblengan Grand Master Paranormal adalah program yang akan mengajarkan Anda cara menjadi paranormal secara instan tanpa perlu puasa atau tirakat yang berlama-lama. Program ini mencakup ratusan ilmu, dan cukup dengan menelan kapsul yang diberikan, semua keilmuan tersebut akan aktif dalam diri Anda. Setelah itu, Anda hanya perlu melakukan penyelarasan, menghafal mantra, dan memahami teknik tata caranya agar bisa langsung mempraktikkannya di rumah. Dalam paket ini, Anda juga akan mendapatkan media-media seperti yang terlihat pada gambar kedua, dua buah buku panduan tebal lengkap, serta sertifikat sesuai nama pemahar.',
+    detailedDescription: 'Tanpa Puasa, Langsung Aktif, tanpa ritual yang memberatkan',
+    price: 400000,
+    stock: 122,
+    category: ProductCategory.KEILMUAN_SPIRITUAL,
+    images: [
+      'https://i.ibb.co/JRSGbFdv/1.jpg',
+      'https://i.ibb.co/Vc5bxx1J/3.jpg',
+      'https://i.ibb.co/9Hp7TmgL/2.jpg',
+      'https://i.ibb.co/C5YBSkkg/5.jpg',
+      'https://i.ibb.co/Kx3S0JTk/4.jpg',
+    ],
+    material: "6 buah kapsul pengaktifan,7 buah kapsul mata batin, ramuan magic, Buku Panduan Lengkap",
+  },
 
   // Produk Awal Kategori Media Bertuah
   {
@@ -1370,6 +1402,85 @@ export const products: Product[] = [
       'https://i.ibb.co/s9TdPKvg/matabatinmy3.jpg',
     ],
     material: "1 botol minyak,3 buah dupa, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+   {
+    id: 'cm033',
+    name: 'Minyak Gendam Bisnis',
+    description: 'minyak khusus untuk gendam bisnis. Apapun bentuk bisnis anda. Bisa juga untuk sales, ojek online. Makelaran dll Cukup di bawah dan baca kunci 3 kata saat ada target. Klien ,dll. Insyaallah allah akan banyak keberuntungan dan keberhasilan rr semua bisnis2 anda dan orang2 akan tunduk nurut dg perkataan anda Harus jujur jangan untuk nipu anda akan sial bila di buat nipu krena khodamnya tidak mau untuk nipu2. Insyaallah langsung reaksi',
+    price: 170000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/zTcYGm42/20250610-234826.jpg',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+   {
+    id: 'cm034',
+    name: 'Haikal Arjuna Bidadari',
+    description: 'Haikal ini dibuat dari kulit kijang dan di-rajah menggunakan tinta emas. Fungsinya tujuannya untuk pelet, pengasihan, tebar pesona, daya tarik, aura, karisma, mendatangkan jodoh, kecantikan/ketampanan, dll. Monggo di pesan, proses pembuatan sekitar 3 hari sesuai nama pemesan.',
+    price: 170000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/PGtjSGvg/1.jpg',
+      'https://i.ibb.co/DDrVBVRv/2.jpg',
+    ],
+    material: "1 haikal, kertas panduan lengkap",
+    detailedDescription: 'preorder 3 hari, tanpa pantangan, tanpa puasa'
+  },
+   {
+    id: 'cm035',
+    name: 'Kapsul Ruqyah Sudah Di Asmak',
+    description: 'fungsi dan deskripsi ada di gambar',
+    price: 100000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/6JtmhyKk/20210827-173244.jpg',
+      'https://i.ibb.co/ZzxRTpsF/1.jpg',
+      'https://i.ibb.co/994JBZhB/2.jpg',
+      'https://i.ibb.co/dw5dJPxs/3.jpg',
+      'https://i.ibb.co/xqXHD71m/4.jpg',
+      'https://i.ibb.co/wZ2LD6Qc/5.jpg',
+      'https://i.ibb.co/tT9Lsgxb/6.jpg',
+      'https://i.ibb.co/LhrcncBV/7.jpg',
+    ],
+    material: "1 botol kapsul isi 80, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+   {
+    id: 'cm036',
+    name: 'Ramuan Magic',
+    description: 'Deskripsi Ramuan Magic: Ramuan ini terbuat dari bahan-bahan alami yang sudah diolah dengan ritual khusus. Berikut beberapa khasiatnya: jika Anda mengoleskan pada titik indra ke enam, maka indra ke enam Anda akan aktif dan Anda bisa melihat hantu, ghoib, cukup dengan niat saja; jika Anda mengoleskan di kening dan tengkuk orang kesurupan/kesambet, segera sadar sembuh; jika Anda mengoleskan pada sakit kena santet atau orang pelet, maka bisa segera sembuh atau maksimal 24 jam semua penyakit santet, pelet, guna, sihir akan hilang sembuh (tidak bisa untuk penyakit medis); jika Anda menggosokan di telapak tangan, maka telapak tangan Anda akan menjadi radar ghoib yang akurat, menjadi pendeteksian yang sangat akurat untuk berbagai hal; jika Anda mengoleskan di alis setiap malam, maka aura simpati, daya tarik Anda akan bangkit dan Anda akan mempunyai daya pengasihan, daya pelet luas, pandangan Anda bisa membuat lawan jenis klepek-klepek pada Anda; jika Anda mengoleskan di bawah mata dalam beberapa malam atau sebelum tidur, maka mata Anda mampu melihat fenomena alam, melihat setengah ghoib, melihat jin, makhluk ghoib dengan mata telanjang; jika Anda mengoleskan di mata ketiga/cakra ajna, maka cakra ajna Anda akan aktif dan bisa untuk cenayang, trawangan, melihat hal ghoib dll.; jika Anda mengoleskan di titik cakra kundalini, maka cakra kundalini Anda akan aktif dan beberapa kemampuan ghoib akan aktif dengan sendirinya; jika Anda mengoleskan di telinga dalam beberapa hari, telinga Anda bisa mendengarkan suara aneh dari dunia ghoib dll.; jika Anda mengoleskan di 7 titik cakra atau titik simpul ghoib, maka semua cakra Anda akan terbuka, aktif dalam waktu singkat; jika ramuan Anda digunakan saat melakukan ritual tarik pusaka, maka akan mempercepat penarikan karena telapak tangan Anda akan mempunyai daya penarik yang sangat dasyat; jika ramuan Anda oleskan di pusar, maka Anda akan terhindar dari jin dan santet. Insya Allah masih banyak lagi fungsi nyata dari khasiat ramuan ini.',
+    price: 100000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/zHWqSG8F/4.jpg',
+      'https://i.ibb.co/zHWqSG8F/4.jpg',
+      'https://i.ibb.co/G4yc1xMD/2.jpg',
+      'https://i.ibb.co/VYrZzTc0/3.jpg',
+    ],
+    material: "1 botol minyak isi 30 ml, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+   {
+    id: 'cm037',
+    name: 'Minyak Titah Raja Multifungsi',
+    description: 'Produk ini memiliki berbagai manfaat, termasuk pelet, kekebalan, pelarisan, mendatangkan klien, pasien, dan tamu, penundukan, usaha sukses, mengaktifkan ilmu ghoib, mengaktifkan wadah ilmu, menyatuhkan ilmu agar tajam sehingga semua hajat berhasil, mengunci pasangan (pelet jarak jauh lewat foto), pelet jarak jauh hanya melalui nama, pembuka aura, mencari pekerjaan, datangkan jodoh, magnet uang, induk uang, jabatan, karir, menutup semua masalah, melanggengkan jabatan, menghancurkan lawan, mengembalikan kiriman guna 2, membuat minyak pelet, serta segala hajat lainnya.',
+    price: 150000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co/SwPTwjq0/20210405-075316.jpg',
+      'https://i.ibb.co/s9mpJPjv/IMG20210405073715.jpg',
+      'https://i.ibb.co/JjPfr8Tp/IMG20210405071649.jpg',
+      'https://i.ibb.co/m5H4gfXR/IMG20210405073927.jpg',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
   },
 
