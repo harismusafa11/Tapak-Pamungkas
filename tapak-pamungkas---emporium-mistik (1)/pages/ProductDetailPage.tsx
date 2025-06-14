@@ -7,7 +7,7 @@ import { LoadingSpinner } from '../components/ui/LoadingSpinner';
 import { ImageSlider } from '../components/products/ImageSlider';
 import { Button } from '../components/ui/Button';
 import { WHATSAPP_NUMBER, STORE_NAME, CATEGORIES_SLUGS } from '../constants';
-import { WhatsAppIcon, TagIcon, CubeIcon, AcademicCapIcon, SparklesIcon } from '../components/ui/Icon';
+import { WhatsAppIcon, TagIcon, CubeIcon, AcademicCapIcon, SparklesIcon, FacebookIcon, TwitterIcon, LinkIcon } from '../components/ui/Icon';
 import { AnimatedSection } from '../components/common/AnimatedSection';
 import { SectionTitle } from '../components/common/SectionTitle';
 
@@ -15,6 +15,7 @@ export const ProductDetailPage: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
   const [product, setProduct] = useState<Product | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
     if (productId) {
@@ -48,8 +49,24 @@ export const ProductDetailPage: React.FC = () => {
     );
   }
 
-  const whatsappMessage = `Halo ${STORE_NAME}, aku naksir nih sama produk ini: ${product.name} (ID: ${product.id}). Ada diskon Rp 15.000 kan? Mau tanya-tanya dong!`;
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+  const mainWhatsappMessage = `Halo ${STORE_NAME}, aku naksir nih sama produk ini: ${product.name} (ID: ${product.id}). Ada diskon Rp 15.000 kan? Mau tanya-tanya dong!`;
+  const mainWhatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mainWhatsappMessage)}`;
+  
+  const productUrl = window.location.href;
+  const shareTextBase = `Cek produk keren ini dari ${STORE_NAME}: ${product.name}`;
+  const shareTextWhatsApp = `${shareTextBase} - ${productUrl}`;
+  const shareTextTwitter = `Penasaran sama ${product.name} dari ${STORE_NAME}? Cek di sini:`;
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(productUrl);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 3000); // Hide message after 3 seconds
+    } catch (err) {
+      console.error('Gagal menyalin link:', err);
+      // Optionally, show an error message to the user
+    }
+  };
 
   return (
     <AnimatedSection className="container mx-auto py-8">
@@ -111,7 +128,7 @@ export const ProductDetailPage: React.FC = () => {
           </div>
 
           {product.stock > 0 ? (
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <a href={mainWhatsappLink} target="_blank" rel="noopener noreferrer">
               <Button variant="primary" size="lg" fullWidth leftIcon={<WhatsAppIcon className="h-6 w-6" />}>
                 Pesan via WhatsApp Yuk!
               </Button>
@@ -124,6 +141,53 @@ export const ProductDetailPage: React.FC = () => {
           <p className="text-xs text-text-secondary text-center mt-2">
             FYI: Ordernya langsung lewat WhatsApp ya, biar ngobrolnya lebih enak dan personal! (Jangan lupa sebutin diskonnya!)
           </p>
+
+          {/* Share Section */}
+          <div className="pt-6 border-t border-brand-secondary/30 mt-6">
+            <h4 className="text-md font-semibold text-text-primary mb-3">Bagikan Produk Ini:</h4>
+            <div className="flex items-center space-x-3">
+              <a 
+                href={`https://wa.me/?text=${encodeURIComponent(shareTextWhatsApp)}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 bg-brand-secondary/40 hover:bg-brand-secondary/70 rounded-lg transition-colors"
+                aria-label="Bagikan ke WhatsApp"
+                title="Bagikan ke WhatsApp"
+              >
+                <WhatsAppIcon className="h-5 w-5 text-green-500" />
+              </a>
+              <a 
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 bg-brand-secondary/40 hover:bg-brand-secondary/70 rounded-lg transition-colors"
+                aria-label="Bagikan ke Facebook"
+                title="Bagikan ke Facebook"
+              >
+                <FacebookIcon className="h-5 w-5 text-blue-600" />
+              </a>
+              <a 
+                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${encodeURIComponent(shareTextTwitter)}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 bg-brand-secondary/40 hover:bg-brand-secondary/70 rounded-lg transition-colors"
+                aria-label="Bagikan ke Twitter"
+                title="Bagikan ke Twitter"
+              >
+                <TwitterIcon className="h-5 w-5 text-sky-500" />
+              </a>
+              <button
+                onClick={handleCopyLink}
+                className="p-3 bg-brand-secondary/40 hover:bg-brand-secondary/70 rounded-lg transition-colors relative"
+                aria-label="Salin link produk"
+                title="Salin Link Produk"
+              >
+                <LinkIcon className="h-5 w-5 text-text-secondary" />
+              </button>
+              {isCopied && <span className="ml-2 text-sm text-brand-accent animate-fade-in-up">Link disalin!</span>}
+            </div>
+          </div>
+
         </div>
       </div>
     </AnimatedSection>
