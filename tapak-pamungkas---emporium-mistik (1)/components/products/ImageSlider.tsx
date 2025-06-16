@@ -5,29 +5,36 @@ import { ChevronLeftIcon, ChevronRightIcon, SparklesIcon } from '../ui/Icon';
 interface ImageSliderProps {
   images: string[];
   altText: string;
+  onMainImageClick?: (index: number) => void; // Baru: untuk menangani klik pada gambar utama
 }
 
-export const ImageSlider: React.FC<ImageSliderProps> = ({ images, altText }) => {
+export const ImageSlider: React.FC<ImageSliderProps> = ({ images, altText, onMainImageClick }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // State untuk melacak error per gambar: Record<urlGambar, boolean (hasError)>
   const [imageErrorStatus, setImageErrorStatus] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
-    // Reset error status jika gambar atau currentIndex berubah (misalnya, gambar baru dimuat)
-    // Ini penting agar error dari gambar sebelumnya tidak terbawa ke gambar baru di index yang sama
     if (images && images.length > 0 && images[currentIndex]) {
-        // Hanya reset error untuk gambar saat ini jika belum pernah dicoba atau tidak error
-        // Ini mencegah loop jika gambar memang error permanen
         if (imageErrorStatus[images[currentIndex]] === undefined || imageErrorStatus[images[currentIndex]] === false) {
            setImageErrorStatus(prevStatus => ({ ...prevStatus, [images[currentIndex]]: false }));
         }
     }
-  }, [currentIndex, images]); // Dependency array diubah untuk lebih tepat
+     // Reset currentIndex if images array changes and current index is out of bounds
+    if (images && images.length > 0 && currentIndex >= images.length) {
+      setCurrentIndex(0);
+    }
+    // Reset currentIndex to 0 if images array becomes empty or undefined
+    if ((!images || images.length === 0) && currentIndex !== 0) {
+      setCurrentIndex(0);
+    }
+  }, [currentIndex, images, imageErrorStatus]);
 
 
   if (!images || images.length === 0) {
     return (
-      <div className="w-full aspect-square bg-brand-secondary/30 flex items-center justify-center text-text-secondary rounded-lg">
+      <div 
+        className="w-full aspect-square bg-brand-secondary/30 flex items-center justify-center text-text-secondary rounded-lg cursor-default"
+        aria-label="Tidak ada gambar tersedia"
+      >
         Yah, Gambarnya Nggak Ada
       </div>
     );
@@ -66,10 +73,27 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images, altText }) => 
     </div>
   );
 
+  const handleMainImageContainerClick = () => {
+    if (onMainImageClick && (!hasErrorForCurrentSlide && currentImageSrc)) { // Hanya panggil jika tidak error dan ada gambar
+      onMainImageClick(currentIndex);
+    }
+  };
+
 
   return (
     <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl">
-      <div className="w-full h-full">
+      <div 
+        className={`w-full h-full ${onMainImageClick && (!hasErrorForCurrentSlide && currentImageSrc) ? 'cursor-zoom-in' : 'cursor-default'}`}
+        onClick={handleMainImageContainerClick}
+        role={onMainImageClick ? "button" : undefined}
+        aria-label={onMainImageClick ? `Perbesar gambar ${currentIndex + 1}` : undefined}
+        tabIndex={onMainImageClick ? 0 : undefined}
+        onKeyDown={(e) => {
+          if (onMainImageClick && (e.key === 'Enter' || e.key === ' ')) {
+            handleMainImageContainerClick();
+          }
+        }}
+      >
         {hasErrorForCurrentSlide || !currentImageSrc ? (
           <ImagePlaceholder isError={!!hasErrorForCurrentSlide} />
         ) : (
@@ -85,14 +109,14 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images, altText }) => 
       {displayImages.length > 1 && (
         <>
           <button
-            onClick={goToPrevious}
+            onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
             className="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent"
             aria-label="Gambar sebelumnya"
           >
             <ChevronLeftIcon className="h-6 w-6" />
           </button>
           <button
-            onClick={goToNext}
+            onClick={(e) => { e.stopPropagation(); goToNext(); }}
             className="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/70 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent"
             aria-label="Gambar berikutnya"
           >
@@ -105,7 +129,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images, altText }) => 
           {displayImages.map((_, slideIndex) => (
             <button
               key={slideIndex}
-              onClick={() => goToSlide(slideIndex)}
+              onClick={(e) => { e.stopPropagation(); goToSlide(slideIndex);}}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 currentIndex === slideIndex ? 'bg-brand-accent scale-125' : 'bg-gray-400/50 hover:bg-gray-300/70'
               }`}

@@ -1511,3 +1511,18 @@ export const searchProducts = (query: string): Product[] => {
     (product.material && product.material.toLowerCase().includes(lowerCaseQuery))
   );
 };
+
+export const getRecommendedProducts = (
+  currentProductId: string,
+  currentProductCategory: ProductCategory,
+  count: number = 3 // Default to 3 recommendations
+): Product[] => {
+  const categoryProducts = products.filter(
+    (p) => p.category === currentProductCategory && p.id !== currentProductId
+  );
+
+  // Simple shuffle
+  const shuffled = categoryProducts.sort(() => 0.5 - Math.random());
+  
+  return shuffled.slice(0, count);
+};

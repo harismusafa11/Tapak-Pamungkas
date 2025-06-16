@@ -87,17 +87,18 @@ export const SearchResultsPage: React.FC = () => {
           </div>
 
           {totalPages > 1 && (
-            <div className="mt-12 flex justify-center items-center space-x-4">
+            <div className="mt-12 flex justify-center items-center space-x-2 sm:space-x-4">
               <Button 
                 onClick={handlePrevPage} 
                 disabled={currentPage === 1}
                 variant="outline"
                 size="md"
                 leftIcon={<ChevronLeftIcon className="h-5 w-5" />}
+                aria-label="Halaman sebelumnya"
               >
-                Sebelumnya
+                <span className="hidden sm:inline">Sebelumnya</span>
               </Button>
-              <span className="text-text-secondary font-medium">
+              <span className="text-text-secondary font-medium text-sm sm:text-base">
                 Hal {currentPage} / {totalPages}
               </span>
               <Button 
@@ -106,8 +107,9 @@ export const SearchResultsPage: React.FC = () => {
                 variant="outline"
                 size="md"
                 rightIcon={<ChevronRightIcon className="h-5 w-5" />}
+                aria-label="Halaman berikutnya"
               >
-                Berikutnya
+                <span className="hidden sm:inline">Berikutnya</span>
               </Button>
             </div>
           )}

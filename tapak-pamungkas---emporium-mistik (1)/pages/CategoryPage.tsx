@@ -159,7 +159,7 @@ export const CategoryPage: React.FC = () => {
           </div>
 
           {totalPages > 1 && (
-            <div className="mt-12 flex justify-center items-center space-x-4">
+            <div className="mt-12 flex justify-center items-center space-x-2 sm:space-x-4">
               <Button 
                 onClick={handlePrevPage} 
                 disabled={currentPage === 1}
@@ -168,9 +168,9 @@ export const CategoryPage: React.FC = () => {
                 leftIcon={<ChevronLeftIcon className="h-5 w-5" />}
                 aria-label="Halaman sebelumnya"
               >
-                Sebelumnya
+                <span className="hidden sm:inline">Sebelumnya</span>
               </Button>
-              <span className="text-text-secondary font-medium" aria-live="polite" aria-atomic="true">
+              <span className="text-text-secondary font-medium text-sm sm:text-base" aria-live="polite" aria-atomic="true">
                 Hal {currentPage} / {totalPages}
               </span>
               <Button 
@@ -181,7 +181,7 @@ export const CategoryPage: React.FC = () => {
                 rightIcon={<ChevronRightIcon className="h-5 w-5" />}
                 aria-label="Halaman berikutnya"
               >
-                Berikutnya
+                <span className="hidden sm:inline">Berikutnya</span>
               </Button>
             </div>
           )}
