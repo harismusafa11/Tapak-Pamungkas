@@ -20,6 +20,34 @@ const navLinks: NavLinkItem[] = [
   { label: "FAQ", path: "/faq" },
 ];
 
+// Define SearchForm outside Navbar to prevent re-creation on every render
+interface SearchFormProps {
+  query: string;
+  onQueryChange: (value: string) => void;
+  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  isMobile?: boolean;
+}
+
+const SearchForm: React.FC<SearchFormProps> = ({ query, onQueryChange, onSubmit, isMobile }) => (
+  <form onSubmit={onSubmit} className={`flex items-center ${isMobile ? 'w-full mt-2' : 'ml-4'}`}>
+    <input
+      type="search"
+      value={query}
+      onChange={(e) => onQueryChange(e.target.value)}
+      placeholder="Cari barang mistik..."
+      className={`px-3 py-2 text-sm rounded-l-md bg-brand-dark border border-brand-secondary text-text-primary focus:ring-brand-accent focus:border-brand-accent focus:outline-none ${isMobile ? 'w-full' : 'w-48 md:w-64'}`}
+    />
+    <button
+      type="submit"
+      className="p-2 bg-brand-accent text-white rounded-r-md hover:bg-red-700 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2 focus:ring-offset-brand-dark"
+      aria-label="Cari produk"
+    >
+      <SearchIcon className="h-5 w-5" />
+    </button>
+  </form>
+);
+
+
 export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -100,26 +128,6 @@ export const Navbar: React.FC = () => {
     );
   };
 
-  const SearchForm: React.FC<{isMobile?: boolean}> = ({isMobile}) => (
-    <form onSubmit={handleSearchSubmit} className={`flex items-center ${isMobile ? 'w-full mt-2' : 'ml-4'}`}>
-      <input
-        type="search"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        placeholder="Cari barang mistik..."
-        className={`px-3 py-2 text-sm rounded-l-md bg-brand-dark border border-brand-secondary text-text-primary focus:ring-brand-accent focus:border-brand-accent focus:outline-none ${isMobile ? 'w-full' : 'w-48 md:w-64'}`}
-      />
-      <button
-        type="submit"
-        className="p-2 bg-brand-accent text-white rounded-r-md hover:bg-red-700 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2 focus:ring-offset-brand-dark"
-        aria-label="Cari produk"
-      >
-        <SearchIcon className="h-5 w-5" />
-      </button>
-    </form>
-  );
-
-
   return (
     <nav className="bg-brand-primary shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
@@ -134,7 +142,11 @@ export const Navbar: React.FC = () => {
             <div className="flex items-baseline space-x-4">
               {navLinks.map(link => <NavItem key={link.label} item={link} />)}
             </div>
-            <SearchForm />
+            <SearchForm
+                query={searchQuery}
+                onQueryChange={setSearchQuery}
+                onSubmit={handleSearchSubmit}
+            />
           </div>
           <div className="md:hidden flex items-center">
              {/* Optionally, show a search icon to expand search on mobile if not in menu */}
@@ -160,7 +172,12 @@ export const Navbar: React.FC = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map(link => <NavItem key={link.label} item={link} isMobile />)}
             <div className="border-t border-brand-secondary/30 pt-3 mt-3">
-                <SearchForm isMobile />
+                <SearchForm 
+                  isMobile
+                  query={searchQuery}
+                  onQueryChange={setSearchQuery}
+                  onSubmit={handleSearchSubmit}
+                />
             </div>
           </div>
         </div>
