@@ -971,7 +971,7 @@ export const products: Product[] = [
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
       'https://files.catbox.moe/chhe7k.jpg',
-      'https://files.catbox.moe/xoprwm.jpg.jpg',
+      'https://files.catbox.moe/xoprwm.jpg',
       'https://files.catbox.moe/7kr6s8.jpg'
     ],
     featured: true,
@@ -987,10 +987,10 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/CKtPr6Mx/1.jpg',
-      'https://i.ibb.co/zTGmssdZ/2.jpg',
-      'https://i.ibb.co/HptZJjst/3.jpg',
-      'https://i.ibb.co/SgdXSJV/4.jpg',
+      'https://files.catbox.moe/siefu0.jpg',
+      'https://files.catbox.moe/6klo35.jpg',
+      'https://files.catbox.moe/qdwsv2.jpg',
+      'https://files.catbox.moe/9es2ca.jpg',
     ],
     material: "1botol minyak isi 10ml, 1 buah kapsul, kertas panduan lengkap",
   },
@@ -1003,12 +1003,12 @@ export const products: Product[] = [
     stock: 5,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/qMm7Nf7Z/1.jpg',
-      'https://i.ibb.co/twNdvZW5/2.jpg',
-      'https://i.ibb.co/cSwgLyyN/3.jpg',
+      'https://files.catbox.moe/98mieo.jpg',
+      'https://files.catbox.moe/wrj9bt.jpg',
+      'https://files.catbox.moe/v3frqr.jpg',
     ],
-    material: "1x Bola Kristal Kuarsa Alami (Diameter 10cm), 1x Dudukan Kayu Berukir, Kain Pembersih Khusus",
-    dimensions: "Bola Diameter 10cm",
+    material: "1 buah kartu, kertas panduan, 3 buah dupa",
+    dimensions: "tanpa pantangan, tanpa puasa",
   },
   {
     id: 'cm004',
@@ -1018,8 +1018,8 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/hJ4NT6G8/20210908-080433.jpg',
-      'https://i.ibb.co/ynhmM9YJ/20210908-080514.jpg',
+      'https://files.catbox.moe/e3yo98.jpg',
+      'https://files.catbox.moe/ro7iqr.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1032,10 +1032,10 @@ export const products: Product[] = [
     stock: 20,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/TqDKTHx9/20201126-073957.jpg',
-      'https://i.ibb.co/YBG9Byct/20201126-074534.jpg',
-      'https://i.ibb.co/TMgMtNSJ/20201126-074028.jpg',
-      'https://i.ibb.co/B5sVZcRh/20201126-074055.jpg',
+      'https://files.catbox.moe/gn6gfr.jpg',
+      'https://files.catbox.moe/zzt53q.jpg',
+      'https://files.catbox.moe/yj8yq0.jpg',
+      'https://files.catbox.moe/65n2qv.jpg',
     ],
     material: "1 botol minyak isi 3ml, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1048,8 +1048,8 @@ export const products: Product[] = [
     stock: 32,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/TN0s2kW/1.jpg',
-      'https://i.ibb.co/kdgHJsr/2.jpg',
+      'https://files.catbox.moe/1yex6k.jpg',
+      'https://files.catbox.moe/5uptfs.jpg',
     ],
     material: "Saputangan, 3 buah Dupa,  kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1062,7 +1062,7 @@ export const products: Product[] = [
     stock: 25,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/QFxWhMdw/1.jpg',
+      'https://files.catbox.moe/x1u3af.jpg',
     ],
     material: "Sapu tangan, 3 buah dupa kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1075,8 +1075,8 @@ export const products: Product[] = [
     stock: 29,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/9Jm9r63/1.jpg',
-      'https://i.ibb.co/9m9VkJFx/2.jpg',
+      'https://files.catbox.moe/uufn8a.jpg',
+      'https://files.catbox.moe/w32pi5.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1089,10 +1089,10 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/jZbfXvq3/20250316-153541.jpg',
-      'https://i.ibb.co/HDxh2Q1g/20250317-145436.jpg',
-      'https://i.ibb.co/N2HLyrXC/20250316-173403.jpg',
-      'https://i.ibb.co/pjhxBMjJ/20250316-173425.jpg',
+      'https://files.catbox.moe/leux1b.jpg',
+      'https://files.catbox.moe/jo33am.jpg',
+      'https://files.catbox.moe/tfacna.jpg',
+      'https://files.catbox.moe/3abfc3.jpg',
     ],
     material: "1 botol minyak isi 4ml, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1105,9 +1105,9 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/67MWTt5p/20250316-180327.jpg',
-      'https://i.ibb.co/nNkNwLRZ/retouch-2025031617524377.jpg',
-      'https://i.ibb.co/gLy5Bdhq/20250317-151205.jpg',
+      'https://files.catbox.moe/pk30xw.jpg',
+      'https://files.catbox.moe/d6bb2r.jpg',
+      'https://files.catbox.moe/d6bb2r.jpg',
     ],
     material: "1 botol minyak isi 10ml, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1120,8 +1120,8 @@ export const products: Product[] = [
     stock: 5,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/pvksdFVp/20250401-111155.jpg',
-      'https://i.ibb.co/G4wky3zX/20250401-111513.jpg',
+      'https://files.catbox.moe/wbspu9.jpg',
+      'https://files.catbox.moe/tiizqy.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1134,8 +1134,8 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/jk9yLcV8/20250401-121802.jpg',
-      'https://i.ibb.co/j9G2zq7c/20250401-120521.jpg',
+      'https://files.catbox.moe/xri6h9.jpg',
+      'https://files.catbox.moe/9jxg3q.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1148,9 +1148,9 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/Dfqj2Jqq/20250501-144209.jpg',
-      'https://i.ibb.co/0jcNhzR8/20250501-150412.jpg',
-      'https://i.ibb.co/nMvN8t33/IMG20210415073341.jpg',
+      'https://files.catbox.moe/awt1z0.jpg',
+      'https://files.catbox.moe/dyere3.jpg',
+      'https://files.catbox.moe/c0op1o.jpg',
     ],
     material: "1 pcs yant, kertas panduan lengkap",
     detailedDescription: 'pantangan jangan bawa masuk wc, tanpa puasa'
@@ -1163,9 +1163,9 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/HTXRLvrk/20210827-101837.jpg',
-      'https://i.ibb.co/84x8z6rP/20210827-102107.jpg',
-      'https://i.ibb.co/MkVF0xtb/20210827-102048.jpg',
+      'https://files.catbox.moe/r9chuj.jpg',
+      'https://files.catbox.moe/dedwny.jpg',
+      'https://files.catbox.moe/1z6042.jpg',
     ],
     material: "1 botol , kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1178,8 +1178,8 @@ export const products: Product[] = [
     stock: 42,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/6cMd05Lk/20210827-102432.jpg',
-      'https://i.ibb.co/7JkP6f07/20210827-102444.jpg',
+      'https://files.catbox.moe/89t1ty.jpg',
+      'https://files.catbox.moe/cf11yo.jpg',
     ],
     material: "1 botol , kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1192,9 +1192,9 @@ export const products: Product[] = [
     stock: 45,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/QjpJ5dF3/20210825-161814.jpg',
-      'https://i.ibb.co/LX1Lw3QF/20210825-161238.jpg',
-      'https://i.ibb.co/Z1mY4hzZ/20210825-161917.jpg',
+      'https://files.catbox.moe/rye0g1.jpg',
+      'https://files.catbox.moe/cvg534.jpg',
+      'https://files.catbox.moe/tdqf95.jpg',
     ],
     material: "1 botol  kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1207,8 +1207,8 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/Z688r4hz/1.jpg',
-      'https://i.ibb.co/rR8vq5wT/2.jpg',
+      'https://files.catbox.moe/4f94k7.jpg',
+      'https://files.catbox.moe/eidtms.jpg',
     ],
     material: "1 botol minyak, 3 buah dupa, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1221,8 +1221,8 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/8gzLvShR/1.jpg',
-      'https://i.ibb.co/mFyWx7gG/5.jpg',
+      'https://files.catbox.moe/aakgd4.jpg',
+      'https://files.catbox.moe/2xbxa7.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1235,9 +1235,9 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/r2vrZdhQ/20230930-105501.jpg',
-      'https://i.ibb.co/N6pJWwrM/20230930-105748.jpg',
-      'https://i.ibb.co/SDTCHZnm/20230930-105817.jpg',
+      'https://files.catbox.moe/0ugtgf.jpg',
+      'https://files.catbox.moe/axhty2.jpg',
+      'https://files.catbox.moe/ecu7p6.jpg',
     ],
     material: "1 botol isi 9, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1250,8 +1250,8 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/TDD1N0PW/image-3-u.jpg',
-      'https://i.ibb.co/zhsZs26k/image-3.jpg',
+      'https://files.catbox.moe/bu4lym.jpg',
+      'https://files.catbox.moe/2lmc7n.jpg',
     ],
     material: "7 buah kapsul, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1264,8 +1264,8 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/S4BsJ80L/20231009-110142.jpg',
-      'https://i.ibb.co/vxmh9YmD/20231009-110241.jpg',
+      'https://files.catbox.moe/7zn85h.jpg',
+      'https://files.catbox.moe/7zn85h.jpg',
     ],
     material: "1 buah kalung, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1278,8 +1278,8 @@ export const products: Product[] = [
     stock: 30,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/DP6sqrhB/20230919-114203.jpg',
-      'https://i.ibb.co/3mPJWp7R/20230919-114740.jpg',
+      'https://files.catbox.moe/n1aang.jpg',
+      'https://files.catbox.moe/5rv0rs.jpg',
     ],
     material: "6 buah kapsul, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1292,8 +1292,8 @@ export const products: Product[] = [
     stock: 20,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/PZ7VKnpk/Whats-App-Image-2025-06-08-at-20-39-22-d7bf3af2.jpg',
-      'https://i.ibb.co/5hhgzjWP/Whats-App-Image-2025-06-08-at-20-39-22-38d903e0.jpg',
+      'https://files.catbox.moe/5czq1a.jpg',
+      'https://files.catbox.moe/e7ppeg.jpg',
     ],
     material: "1 buah blangkon, kertas panduan lengkap",
     detailedDescription: 'preorder 5-7 hari untu proses bikinnya sesuai nama pemahar, tanpa pantangan, tanpa puasa'
@@ -1306,9 +1306,9 @@ export const products: Product[] = [
     stock: 11,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/JRpMnHZ2/20230929-162240.jpg',
-      'https://i.ibb.co/Z4QgPJn/20230929-162616.jpg',
-      'https://i.ibb.co/YBWGx60F/20230929-162326.jpg',
+      'https://files.catbox.moe/bdvk0y.jpg',
+      'https://files.catbox.moe/jzw5sy.jpg',
+      'https://files.catbox.moe/ow6b2k.jpg',
     ],
     material: "1 buah piramid, 1 bbotol minyak perawatan, kertas panduan lengkap",
     detailedDescription: 'preorder 5-7 hari untu proses bikinnya sesuai nama pemahar, tanpa pantangan, tanpa puasa'
@@ -1321,8 +1321,8 @@ export const products: Product[] = [
     stock: 20,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/99Sf1vy5/20211125-080450.jpg',
-      'https://i.ibb.co/3YSVftj2/20211202-192946.jpg',
+      'https://files.catbox.moe/9dvxh5.jpg',
+      'https://files.catbox.moe/2l40e6.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1335,9 +1335,9 @@ export const products: Product[] = [
     stock: 97,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/nMB1DQnX/IMG-20210718-190404.jpg',
-      'https://i.ibb.co/N2JbHKD5/IMG-20210718-190426.jpg',
-      'https://i.ibb.co/R43wMq37/IMG-20210718-190401.jpg',
+      'https://files.catbox.moe/f3a5ak.jpg',
+      'https://files.catbox.moe/wbcn4a.jpg',
+      'https://files.catbox.moe/1z6jtu.jpg',
     ],
     material: "1 buah yant, 3 buah dupa, kertas panduan lengkap",
     detailedDescription: 'preorder 3 hari, tanpa pantangan, tanpa puasa, perawatan bakari dupa,'
@@ -1350,9 +1350,9 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/x8DGdkv6/20210626-083238.jpg',
-      'https://i.ibb.co/Xff5RhPr/IMG-20210626-082923.jpg',
-      'https://i.ibb.co/35BTfCVF/IMG-20210626-082935.jpg',
+      'https://files.catbox.moe/c9p8mq.jpg',
+      'https://files.catbox.moe/c2a7mv.jpg',
+      'https://files.catbox.moe/2d61fz.jpg',
     ],
     material: "1 botol minyak,3 buah dupa, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1365,9 +1365,9 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/SDHLTfZZ/20210806-075032.jpg',
-      'https://i.ibb.co/QW9ySGx/IMG-20210806-074623.jpg',
-      'https://i.ibb.co/F4GRh9YF/IMG-20210806-074703.jpg',
+      'https://files.catbox.moe/efcoih.jpg',
+      'https://files.catbox.moe/4ffubz.jpg',
+      'https://files.catbox.moe/ztnxqj.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1380,7 +1380,7 @@ export const products: Product[] = [
     stock: 77,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/LdKMsfwM/20211004-103831.jpg',
+      'https://files.catbox.moe/nxnlg2.jpg',
     ],
     material: "garam+gula, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1393,7 +1393,7 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/8DtjxqxP/20211004-123917.jpg',
+      'https://files.catbox.moe/s4oaux.jpg',
     ],
     material: "2 stiker, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'

@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     <footer className="bg-brand-primary border-t border-brand-secondary text-text-secondary py-12">
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center mb-6">
-          <img src="https://i.ibb.co/XxpzTXQk/logotp.png" alt={`Logo ${STORE_NAME}`} className="h-10 w-10 mr-2 object-contain" />
+          <img src="https://files.catbox.moe/eq3p0j.png" alt={`Logo ${STORE_NAME}`} className="h-10 w-10 mr-2 object-contain" />
           <p className="text-xl font-bold text-brand-accent font-serif">{STORE_NAME}</p>
         </div>
         
