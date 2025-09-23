@@ -1,6 +1,5 @@
-
 import React, { useState, useRef, useEffect } from 'react';
-import { GoogleGenAI, Chat } from '@google/genai';
+import { GoogleGenAI } from '@google/genai';
 import { products } from '../data/products';
 import { STORE_NAME } from '../constants';
 import { AnimatedSection } from '../components/common/AnimatedSection';
@@ -36,7 +35,6 @@ ${productContextJson}`;
 
 
 export const KonsultanAiPage: React.FC = () => {
-  const [chat, setChat] = useState<Chat | null>(null);
   const [chatHistory, setChatHistory] = useState<ChatMessage[]>([]);
   const [userInput, setUserInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -45,27 +43,9 @@ export const KonsultanAiPage: React.FC = () => {
 
   useEffect(() => {
     document.title = `Konsultan AI | ${STORE_NAME}`;
-    
-    const initializeChat = () => {
-        try {
-            const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-            const newChat = ai.chats.create({
-                model: 'gemini-2.5-flash',
-                config: {
-                    systemInstruction: SYSTEM_INSTRUCTION
-                }
-            });
-            setChat(newChat);
-            setChatHistory([
-              { role: 'model', text: `Salam... Saya adalah Konsultan Gaib AI dari ${STORE_NAME}. Ceritakan apa yang sedang Anda rasakan atau masalah apa yang sedang Anda hadapi. Saya akan mencoba memberikan petunjuk dan rekomendasi yang mungkin bisa membantu.` }
-            ]);
-        } catch (err) {
-            console.error("Failed to initialize chat:", err);
-            setError("Gagal memulai sesi konsultasi. Pastikan koneksi dan konfigurasi sudah benar.");
-        }
-    };
-    initializeChat();
-
+    setChatHistory([
+      { role: 'model', text: `Salam... Saya adalah Konsultan Gaib AI dari ${STORE_NAME}. Ceritakan apa yang sedang Anda rasakan atau masalah apa yang sedang Anda hadapi. Saya akan mencoba memberikan petunjuk dan rekomendasi yang mungkin bisa membantu.` }
+    ]);
   }, []);
 
   useEffect(() => {
@@ -74,24 +54,48 @@ export const KonsultanAiPage: React.FC = () => {
 
   const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!userInput.trim() || isLoading || !chat) return;
+    if (!userInput.trim() || isLoading) return;
 
     const userMessageText = userInput.trim();
     const newUserMessage: ChatMessage = { role: 'user', text: userMessageText };
-    setChatHistory(prev => [...prev, newUserMessage]);
+    const currentChatHistory = [...chatHistory, newUserMessage];
+    
+    setChatHistory(currentChatHistory);
     setUserInput('');
     setIsLoading(true);
     setError(null);
 
     try {
-      const response = await chat.sendMessage({ message: userMessageText });
+      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      
+      const contentsForApi = currentChatHistory.map(msg => ({
+        role: msg.role === 'model' ? 'model' : 'user', // Ensure correct role mapping
+        parts: [{ text: msg.text }]
+      }));
+
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: contentsForApi,
+        config: {
+          systemInstruction: SYSTEM_INSTRUCTION
+        }
+      });
+      
       const modelResponse: ChatMessage = { role: 'model', text: response.text };
       setChatHistory(prev => [...prev, modelResponse]);
+
     } catch (err) {
-      console.error("Error calling Gemini API:", err);
-      const errorMessage = "Waduh, sepertinya ada gangguan gaib pada koneksi kita. Coba tanyakan lagi beberapa saat lagi.";
-      setError(errorMessage);
-      setChatHistory(prev => [...prev, { role: 'model', text: errorMessage }]);
+        console.error("Error calling Gemini API:", err);
+        let errorMessage = "Waduh, sepertinya ada gangguan gaib pada koneksi kita. Coba tanyakan lagi beberapa saat lagi.";
+        
+        if (err instanceof Error && err.message.includes('API key not valid')) {
+            errorMessage = "Sepertinya ada masalah dengan kunci akses gaib. Mohon pemilik situs untuk memeriksa konfigurasinya.";
+        } else if (err instanceof ReferenceError && err.message.includes('process is not defined')) {
+            errorMessage = "Waduh, ada masalah konfigurasi teknis. Konsultan AI tidak dapat diinisialisasi di lingkungan ini. Mohon hubungi pemilik situs.";
+        }
+        
+        setError(errorMessage);
+        setChatHistory(prev => [...prev, { role: 'model', text: errorMessage }]);
     } finally {
       setIsLoading(false);
     }
