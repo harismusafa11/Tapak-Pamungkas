@@ -970,9 +970,9 @@ export const products: Product[] = [
     stock: 555,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/7xR1JCwD/20210622-124126.jpg',
-      'https://i.ibb.co/VYhtyG28/20220226-121552.jpg',
-      'https://i.ibb.co/yvPw2rd/20210622-124231.jpg'
+      'https://files.catbox.moe/chhe7k.jpg',
+      'https://files.catbox.moe/xoprwm.jpg.jpg',
+      'https://files.catbox.moe/7kr6s8.jpg'
     ],
     featured: true,
     material: "7 buah kapsul mata batin dan kertas panduan lengkap",
