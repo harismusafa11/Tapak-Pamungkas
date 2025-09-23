@@ -1555,7 +1555,7 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/vCLFJyTK/unnamed-j.png',
+      'https://files.catbox.moe/hz8aar.png',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
