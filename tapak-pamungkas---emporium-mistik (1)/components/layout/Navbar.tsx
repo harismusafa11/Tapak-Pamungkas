@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { STORE_NAME, CATEGORIES_SLUGS } from '../../constants';
 import { NavLinkItem, ProductCategory } from '../../types';
 import { MenuIcon, XIcon, ChevronDownIcon, SearchIcon, ShoppingCartIcon } from '../ui/Icon';
@@ -55,6 +55,7 @@ export const Navbar: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
+  const location = useLocation();
   const { cart } = useCart();
   const cartItemCount = cart.reduce((count, item) => count + item.quantity, 0);
 
@@ -73,49 +74,53 @@ export const Navbar: React.FC = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+  
+  // Close mobile menu on route change
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  }, [location.pathname]);
+
 
   const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (searchQuery.trim()) {
       navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
       setSearchQuery('');
-      if (isMobileMenuOpen) setIsMobileMenuOpen(false);
     }
   };
 
-  const NavItem: React.FC<{ item: NavLinkItem, isMobile?: boolean }> = ({ item, isMobile }) => {
+  const NavItemDesktop: React.FC<{ item: NavLinkItem }> = ({ item }) => {
     const baseClasses = "px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300";
     const activeClasses = "bg-brand-accent text-white";
     const inactiveClasses = "text-text-secondary hover:text-text-primary hover:bg-brand-secondary";
 
     if (item.isDropdown && item.dropdownItems) {
+      const isDropdownActive = item.dropdownItems.some(subItem => location.pathname === subItem.path);
       return (
-        <div className="relative" ref={isMobile ? null : dropdownRef}>
+        <div className="relative" ref={dropdownRef}>
           <button
             onClick={() => toggleDropdown(item.label)}
-            className={`${baseClasses} ${inactiveClasses} flex items-center w-full justify-between`}
+            className={`${baseClasses} ${isDropdownActive ? activeClasses : inactiveClasses} flex items-center w-full justify-between`}
             aria-expanded={openDropdown === item.label}
             aria-haspopup="true"
           >
             <span>{item.label}</span>
             <ChevronDownIcon className={`w-4 h-4 ml-1 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
           </button>
-          {openDropdown === item.label && (
-            <div className={isMobile ? 'pt-2' : 'absolute right-0 mt-2 w-56 bg-brand-secondary rounded-md shadow-lg py-1 z-20'}>
-              {item.dropdownItems.map(subItem => (
+          <div className={`absolute right-0 mt-2 w-56 bg-brand-secondary rounded-md shadow-lg py-1 z-20 ${openDropdown === item.label ? 'block' : 'hidden'}`}>
+            {item.dropdownItems.map(subItem => (
                 <NavLink
                   key={subItem.path}
                   to={subItem.path}
-                  onClick={() => { setOpenDropdown(null); if (isMobile) setIsMobileMenuOpen(false); }}
-                  className={({ isActive }) =>
-                    `block px-4 py-2 text-sm ${isActive ? activeClasses : inactiveClasses} ${isMobile ? 'pl-8' : ''}`
-                  }
+                  onClick={() => setOpenDropdown(null)}
+                  className={({ isActive }) => `block px-4 py-2 text-sm ${isActive ? activeClasses : inactiveClasses}`}
                 >
                   {subItem.label}
                 </NavLink>
-              ))}
-            </div>
-          )}
+            ))}
+          </div>
         </div>
       );
     }
@@ -123,7 +128,7 @@ export const Navbar: React.FC = () => {
     return (
       <NavLink
         to={item.path}
-        onClick={() => { setOpenDropdown(null); if (isMobile) setIsMobileMenuOpen(false); }}
+        onClick={() => setOpenDropdown(null)}
         className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
       >
         {item.label}
@@ -143,7 +148,7 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="hidden md:flex items-center">
             <div className="flex items-baseline space-x-4">
-              {navLinks.map(link => <NavItem key={link.label} item={link} />)}
+              {navLinks.map(link => <NavItemDesktop key={link.label} item={link} />)}
             </div>
             <SearchForm
                 query={searchQuery}
@@ -185,21 +190,58 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-brand-secondary/50">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map(link => <NavItem key={link.label} item={link} isMobile />)}
-            <div className="border-t border-brand-secondary/30 pt-3 mt-3">
-                <SearchForm 
-                  isMobile
-                  query={searchQuery}
-                  onQueryChange={setSearchQuery}
-                  onSubmit={handleSearchSubmit}
-                />
-            </div>
+      {/* Revamped Mobile Menu */}
+      <div className={`md:hidden border-t border-brand-secondary/50 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          {navLinks.map(item => {
+            if (item.isDropdown && item.dropdownItems) {
+              return (
+                <div key={item.label} className="space-y-1">
+                  <span className="block px-3 py-2 text-sm font-semibold text-text-primary opacity-75">
+                    {item.label}
+                  </span>
+                  <div className="pl-4 space-y-1">
+                    {item.dropdownItems.map(subItem => (
+                      <NavLink
+                        key={subItem.path}
+                        to={subItem.path}
+                        className={({ isActive }) =>
+                          `block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                            isActive ? 'bg-brand-accent text-white' : 'text-text-secondary hover:text-text-primary hover:bg-brand-secondary'
+                          }`
+                        }
+                      >
+                        {subItem.label}
+                      </NavLink>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+            return (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive ? 'bg-brand-accent text-white' : 'text-text-secondary hover:text-text-primary hover:bg-brand-secondary'
+                  }`
+                }
+              >
+                {item.label}
+              </NavLink>
+            );
+          })}
+          <div className="border-t border-brand-secondary/30 pt-3 mt-3">
+              <SearchForm 
+                isMobile
+                query={searchQuery}
+                onQueryChange={setSearchQuery}
+                onSubmit={handleSearchSubmit}
+              />
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

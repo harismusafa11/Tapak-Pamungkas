@@ -30,7 +30,7 @@ export const products: Product[] = [
     category: ProductCategory.KEILMUAN_SPIRITUAL,
     images: [
       'https://i.ibb.co/nsN5VmW0/20240602-162048.jpg',
-      'https://i.ibb.co/67Xb5gVG/2.jpg"',
+      'https://i.ibb.co/67Xb5gVG/2.jpg',
       'https://i.ibb.co/tRnjRyd/3.jpg',
     ],
     material: "3 buah kapsul pengisian, 3 buah dupa, kertas panduan lengkap",
@@ -282,7 +282,7 @@ export const products: Product[] = [
   {
     id: 'mk019',
     name: 'Program Mahaguru Asma Sunge Rajeh Madura 1-5 Tingkatan' ,
-    description: 'Pengasihan Umum, Pengasihan Khusus, Keberanian Luar Biasa, Pelarisan Usaha Apa Saja, Kewibawaan Tingkat Tinggi, Meredam Amarah Seseorang, Kekuatan Pukulan Tangan Menghancurkan Benda Keras, Kebal Pukulan Benda Tumpul, Mengusir Musuh Lewat Bentakan, Menghentikan Pendarahan Luka, Mendapatkan Pinjaman Uang, Memudahkan Seseorang Sakaratul Maut, Menambah Kekuatan Fisik, Menambah Keampuhan Ilmu, Melumpuhkan Ilmu Lawan, Selamat Dari Senjata Tajam, Selamat Dari Kecelakaan Laut, Darat & Udara, Menundukan Musuh, Menagih Hutang, Meluluhkan Hati Seseorang, Menetralisir Tempat Angker, Menetralisir Tempat Yang Dipasangi Sihir, Menangkal Sihir Dan Ilmu Hitam, Mengusir Makhluk Ghaib, Ditakuti Makhluk Ghaib, Mengobati Diri Sendiri, Mengobati Seseorang Kena Sihir, Mengobati Penyakit Medis Non Medis, Mengobati Penyakit Parah, Pagar Ghoib Rumah Dan Lahan, Menundukan Hewan Buas, Mengusir Tamu Tak Diundang, Menahan Mendung, Mendatangkan Hujan, Agar Disayang Majikan, Mempermudah Persalinan, Mengisi Azimat Dan Sejenisnya, Menghantam Musuh Jarak Jauh, Mengisi Kekuatan Pada Seseorang, Menetralisir Racun Dan Sejenisnya, Mendapat Kepercayaan Seseorang, Mengembalikan Barang Hilang, Memulangkan Orang Yang Minggat, Pengobatan Jarak Jauh, Kuat Sexs Berjam Jam, Meningkatkan Nafsu Birahi Pasangan, Mengusir Hama Pengganggu Ketenangan Batin Dan Pikiran, Memperkuat Aura Tubuh, Mengatasi Kendaraan Mogok, Merontokkan Susuk, Mengatasi Anak Rewel, Menarik Rezeki Dari Segala Arah, Mendongkrak Perolehan Ikan, Memisahkan Pasangan Selingkuh, Mempercepat Penjualan Tanah Dan Rumah, Mengisi Aura Kecantikan, Mengisi Aura Ketampanan',
+    description: 'Pengasihan Umum, Pengasihan Khusus, Keberanian Luar Biasa, Pelarisan Usaha Apa Saja, Kewibawaan Tingkat Tinggi, Meredam Amarah Seseorang, Kekuatan Pukulan Tangan Menghancurkan Benda Keras, Kebal Pukulan Benda Tumpul, Mengusir Musuh Lewat Bentakan, Menghentikan Pendarahan Luka, Mendapatkan Pinjaman Uang, Memudahkan Seseorang Sakaratul Maut, Menambah Kekuatan Fisik, Menambah Keampuhan Ilmu, Melumpuhkan Ilmu Lawan, Selamat Dari Senjata Tajam, Selamat Dari Kecelakaan Laut, Darat & Udara, Menundukan Musuh, Menagih Hutang, Meluluhkan Hati Seseorang, Menetralisir Tempat Angker, Menetralisir Tempat Yang Dipasangi Sihir, Menangkal Sihir Dan Ilmu Hitam, Mengusir Makhluk Ghaib, Ditakuti Makhluk Ghaib, Mengobati Diri Sendiri, Mengobati Seseorang Kena Sihir, Mengobati Penyakit Medis Non Medis, Mengobati Penyakit Parah, Pagar Ghoib Rumah Dan Lahan, Menundukan Hewan Buas, Mengusir Tamu Tak Diundang, Menahan Mendung, Mendatangkan Hujan, Agar Disayang Majikan, Mempermudah Persalinan, Mengisi Azimat Dan Sejenisnya, Menghantam Musuh Jarak Jauh, Mengisi Kekuatan Pada Seseorang, Menetralisir Racun Dan Sejenisnya, Mendapat Kepercayaan Seseorang, Mengembalikan Barang Hilang, Memulangkan Orang Yang Minggat, Pengobatan Jarak Jauh, Kuat Sexs Berjam Jam, Meningkatkan Nafsu Birahi Pasangan, Mengusir Hama Pengganggu Ketenangan Batin Dan Pikiran, Memperkuat Aura Tubuh, Mengatasi Kendaraan Mogok, Merontokkan Susuk, Mengatasi Anak Rewel, Menarik Rezeki Dari Segala Arah, Mendongkrak Perolehan Ikan, Memisahkan Pasangan Selinguh, Mempercepat Penjualan Tanah Dan Rumah, Mengisi Aura Kecantikan, Mengisi Aura Ketampanan',
     detailedDescription: 'Tanpa Puasa, Langsung Aktif, tanpa ritual yang memberatkan',
     price: 150000,
     stock: 112,
@@ -297,7 +297,7 @@ export const products: Product[] = [
   {
     id: 'mk020',
     name: 'Program Mahaguru Asma Suryani' ,
-    description: 'Pengasihan Umum, Pengasihan Khusus, Keberanian Luar Biasa, Pelarisan Usaha Apa Saja, Kewibawaan Tingkat Tinggi, Meredam Amarah Seseorang, Kekuatan Pukulan Tangan Menghancurkan Benda Keras, Kebal Pukulan Benda Tumpul, Mengusir Musuh Lewat Bentakan, Menghentikan Pendarahan Luka, Mendapatkan Pinjaman Uang, Memudahkan Seseorang Sakaratul Maut, Menambah Kekuatan Fisik, Menambah Keampuhan Ilmu, Melumpuhkan Ilmu Lawan, Selamat Dari Senjata Tajam, Selamat Dari Kecelakaan Laut, Darat & Udara, Menundukan Musuh, Menagih Hutang, Meluluhkan Hati Seseorang, Menetralisir Tempat Angker, Menetralisir Tempat Yang Dipasangi Sihir, Menangkal Sihir Dan Ilmu Hitam, Mengusir Makhluk Ghaib, Ditakuti Makhluk Ghaib, Mengobati Diri Sendiri, Mengobati Seseorang Kena Sihir, Mengobati Penyakit Medis Non Medis, Mengobati Penyakit Parah, Pagar Ghoib Rumah Dan Lahan, Menundukan Hewan Buas, Mengusir Tamu Tak Diundang, Menahan Mendung, Mendatangkan Hujan, Agar Disayang Majikan, Mempermudah Persalinan, Mengisi Azimat Dan Sejenisnya, Menghantam Musuh Jarak Jauh, Mengisi Kekuatan Pada Seseorang, Menetralisir Racun Dan Sejenisnya, Mendapat Kepercayaan Seseorang, Mengembalikan Barang Hilang, Memulangkan Orang Yang Minggat, Pengobatan Jarak Jauh, Kuat Sexs Berjam Jam, Meningkatkan Nafsu Birahi Pasangan, Mengusir Hama Pengganggu Ketenangan Batin Dan Pikiran, Memperkuat Aura Tubuh, Mengatasi Kendaraan Mogok, Merontokkan Susuk, Mengatasi Anak Rewel, Menarik Rezeki Dari Segala Arah, Mendongkrak Perolehan Ikan, Memisahkan Pasangan Selingkuh, Mempercepat Penjualan Tanah Dan Rumah, Mengisi Aura Kecantikan, Mengisi Aura Ketampanan',
+    description: 'Pengasihan Umum, Pengasihan Khusus, Keberanian Luar Biasa, Pelarisan Usaha Apa Saja, Kewibawaan Tingkat Tinggi, Meredam Amarah Seseorang, Kekuatan Pukulan Tangan Menghancurkan Benda Keras, Kebal Pukulan Benda Tumpul, Mengusir Musuh Lewat Bentakan, Menghentikan Pendarahan Luka, Mendapatkan Pinjaman Uang, Memudahkan Seseorang Sakaratul Maut, Menambah Kekuatan Fisik, Menambah Keampuhan Ilmu, Melumpuhkan Ilmu Lawan, Selamat Dari Senjata Tajam, Selamat Dari Kecelakaan Laut, Darat & Udara, Menundukan Musuh, Menagih Hutang, Meluluhkan Hati Seseorang, Menetralisir Tempat Angker, Menetralisir Tempat Yang Dipasangi Sihir, Menangkal Sihir Dan Ilmu Hitam, Mengusir Makhluk Ghaib, Ditakuti Makhluk Ghaib, Mengobati Diri Sendiri, Mengobati Seseorang Kena Sihir, Mengobati Penyakit Medis Non Medis, Mengobati Penyakit Parah, Pagar Ghoib Rumah Dan Lahan, Menundukan Hewan Buas, Mengusir Tamu Tak Diundang, Menahan Mendung, Mendatangkan Hujan, Agar Disayang Majikan, Mempermudah Persalinan, Mengisi Azimat Dan Sejenisnya, Menghantam Musuh Jarak Jauh, Mengisi Kekuatan Pada Seseorang, Menetralisir Racun Dan Sejenisnya, Mendapat Kepercayaan Seseorang, Mengembalikan Barang Hilang, Memulangkan Orang Yang Minggat, Pengobatan Jarak Jauh, Kuat Sexs Berjam Jam, Meningkatkan Nafsu Birahi Pasangan, Mengusir Hama Pengganggu Ketenangan Batin Dan Pikiran, Memperkuat Aura Tubuh, Mengatasi Kendaraan Mogok, Merontokkan Susuk, Mengatasi Anak Rewel, Menarik Rezeki Dari Segala Arah, Mendongkrak Perolehan Ikan, Memisahkan Pasangan Selinguh, Mempercepat Penjualan Tanah Dan Rumah, Mengisi Aura Kecantikan, Mengisi Aura Ketampanan',
     detailedDescription: 'Tanpa Puasa, Langsung Aktif, tanpa ritual yang memberatkan',
     price: 150000,
     stock: 128,
@@ -942,7 +942,7 @@ export const products: Product[] = [
     stock: 120,
     category: ProductCategory.KEILMUAN_SPIRITUAL,
     images: [
-      'https://i.ibb.co.com/hxH2q4vH/1758608091.png',
+      'https://i.ibb.co/hxH2q4vH/1758608091.png',
     ],
     material: "3 buah kapsul pengaktifan, Buku Panduan Lengkap",
   },
@@ -955,7 +955,7 @@ export const products: Product[] = [
     stock: 122,
     category: ProductCategory.KEILMUAN_SPIRITUAL,
     images: [
-      'https://i.ibb.co.com/xtg9v1vb/unnamed.png',
+      'https://i.ibb.co/xtg9v1vb/unnamed.png',
     ],
     material: "3 buah kapsul pengaktifan, Buku Panduan Lengkap",
   },
@@ -1221,8 +1221,7 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co/8gzLvShR/1.jpg" alt',
-      'https://i.ibb.co/YBVcccSm',
+      'https://i.ibb.co/8gzLvShR/1.jpg',
       'https://i.ibb.co/mFyWx7gG/5.jpg',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
@@ -1480,7 +1479,7 @@ export const products: Product[] = [
    {
     id: 'cm036',
     name: 'Ramuan Magic',
-    description: 'Deskripsi Ramuan Magic: Ramuan ini terbuat dari bahan-bahan alami yang sudah diolah dengan ritual khusus. Berikut beberapa khasiatnya: jika Anda mengoleskan pada titik indra ke enam, maka indra ke enam Anda akan aktif dan Anda bisa melihat hantu, ghoib, cukup dengan niat saja; jika Anda mengoleskan di kening dan tengkuk orang kesurupan/kesambet, segera sadar sembuh; jika Anda mengoleskan pada sakit kena santet atau orang pelet, maka bisa segera sembuh atau maksimal 24 jam semua penyakit santet, pelet, guna, sihir akan hilang sembuh (tidak bisa untuk penyakit medis); jika Anda menggosokan di telapak tangan, maka telapak tangan Anda akan menjadi radar ghoib yang akurat, menjadi pendeteksian yang sangat akurat untuk berbagai hal; jika Anda mengoleskan di alis setiap malam, maka aura simpati, daya tarik Anda akan bangkit dan Anda akan mempunyai daya pengasihan, daya pelet luas, pandangan Anda bisa membuat lawan jenis klepek-klepek pada Anda; jika Anda mengoleskan di bawah mata dalam beberapa malam atau sebelum tidur, maka mata Anda mampu melihat fenomena alam, melihat setengah ghoib, melihat jin, makhluk ghoib dengan mata telanjang; jika Anda mengoleskan di mata ketiga/cakra ajna, maka cakra ajna Anda akan aktif dan bisa untuk cenayang, trawangan, melihat hal ghoib dll.; jika Anda mengoleskan di titik cakra kundalini, maka cakra kundalini Anda akan aktif dan beberapa kemampuan ghoib akan aktif dengan sendirinya; jika Anda mengoleskan di telinga dalam beberapa hari, telinga Anda bisa mendengarkan suara aneh dari dunia ghoib dll.; jika Anda mengoleskan di 7 titik cakra atau titik simpul ghoib, maka semua cakra Anda akan terbuka, aktif dalam waktu singkat; jika ramuan Anda digunakan saat melakukan ritual tarik pusaka, maka akan mempercepat penarikan karena telapak tangan Anda akan mempunyai daya penarik yang sangat dasyat; jika ramuan Anda oleskan di pusar, maka Anda akan terhindar dari jin dan santet. Insya Allah masih banyak lagi fungsi nyata dari khasiat ramuan ini.',
+    description: 'Deskripsi Ramuan Magic: Ramuan ini terbuat dari bahan-bahan alami yang sudah diolah dengan ritual khusus. Berikut beberapa khasiatnya: jika Anda mengoleskan pada titik indra ke enam, maka indra ke enam Anda akan aktif dan Anda bisa melihat hantu, ghoib, cukup dengan niat saja; jika Anda mengoleskan di kening dan tengkuk orang kesurupan/kesambet, segera sadar sembuh; jika Anda mengoleskan pada sakit kena santet atau orang pelet, maka bisa segera sembuh atau maksimal 24 jam semua penyakit santet, pelet, guna, sihir akan hilang sembuh (tidak bisa untuk penyakit medis); jika Anda menggosokan di telapak tangan, maka telapak tangan Anda akan menjadi radar ghoib yang akurat, menjadi pendeteksian yang sangat akurat untuk berbagai hal; jika Anda mengoleskan di alis setiap malam, maka aura simpati, daya tarik Anda akan bangkit dan Anda akan mempunyai daya pengasihan, daya pelet luas, pandangan Anda bisa membuat lawan jenis klepek-klepek pada Anda; jika Anda mengoleskan di bawah mata dalam beberapa malam atau sebelum tidur, maka mata Anda mampu melihat fenomena alam, melihat setengah ghoib, melihat jin, makhluk ghoib dengan mata telanjang; jika Anda mengoleskan di mata ketiga/cakra ajna, maka cakra ajna Anda akan aktif dan bisa untuk cenayang, trawangan, melihat hal ghoib dll.; jika Anda mengoleskan di titik cakra kundalini, maka cakra kundalini Anda akan aktif dan beberapa kemampuan ghoib akan aktif dengan sendirinya; jika Anda mengoleskan di 7 titik cakra atau titik simpul ghoib, maka semua cakra Anda akan terbuka, aktif dalam waktu singkat; jika ramuan Anda digunakan saat melakukan ritual tarik pusaka, maka akan mempercepat penarikan karena telapak tangan Anda akan mempunyai daya penarik yang sangat dasyat; jika ramuan Anda oleskan di pusar, maka Anda akan terhindar dari jin dan santet. Insya Allah masih banyak lagi fungsi nyata dari khasiat ramuan ini.',
     price: 100000,
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
@@ -1517,7 +1516,7 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co.com/sJRWksCN/image.png',
+      'https://i.ibb.co/sJRWksCN/image.png',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1530,7 +1529,7 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co.com/Xr7NtgJp/image.png',
+      'https://i.ibb.co/Xr7NtgJp/image.png',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1543,7 +1542,7 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co.com/k2bDL2jS/image.png',
+      'https://i.ibb.co/k2bDL2jS/image.png',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
@@ -1556,7 +1555,7 @@ export const products: Product[] = [
     stock: 22,
     category: ProductCategory.MEDIA_BERTUAH,
     images: [
-      'https://i.ibb.co.com/vCLFJyTK/unnamed-j.png',
+      'https://i.ibb.co/vCLFJyTK/unnamed-j.png',
     ],
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
