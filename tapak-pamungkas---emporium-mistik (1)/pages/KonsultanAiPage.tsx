@@ -66,7 +66,7 @@ export const KonsultanAiPage: React.FC = () => {
     setError(null);
 
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const ai = new GoogleGenAI({ apiKey: 'AIzaSyA2ZUjYdgvK-wjJmFi_ovRBZaU39djfPiU' });
       
       const contentsForApi = currentChatHistory.map(msg => ({
         role: msg.role === 'model' ? 'model' : 'user', // Ensure correct role mapping
@@ -90,8 +90,6 @@ export const KonsultanAiPage: React.FC = () => {
         
         if (err instanceof Error && err.message.includes('API key not valid')) {
             errorMessage = "Sepertinya ada masalah dengan kunci akses gaib. Mohon pemilik situs untuk memeriksa konfigurasinya.";
-        } else if (err instanceof ReferenceError && err.message.includes('process is not defined')) {
-            errorMessage = "Waduh, ada masalah konfigurasi teknis. Konsultan AI tidak dapat diinisialisasi di lingkungan ini. Mohon hubungi pemilik situs.";
         }
         
         setError(errorMessage);
