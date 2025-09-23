@@ -93,15 +93,15 @@ export const Navbar: React.FC = () => {
         <div className="relative" ref={isMobile ? null : dropdownRef}>
           <button
             onClick={() => toggleDropdown(item.label)}
-            className={`${baseClasses} ${inactiveClasses} flex items-center`}
+            className={`${baseClasses} ${inactiveClasses} flex items-center w-full justify-between`}
             aria-expanded={openDropdown === item.label}
             aria-haspopup="true"
           >
-            {item.label}
+            <span>{item.label}</span>
             <ChevronDownIcon className={`w-4 h-4 ml-1 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
           </button>
           {openDropdown === item.label && (
-            <div className={`absolute ${isMobile ? 'static' : 'right-0 mt-2 w-56 bg-brand-secondary'} rounded-md shadow-lg py-1 z-20`}>
+            <div className={isMobile ? 'pt-2' : 'absolute right-0 mt-2 w-56 bg-brand-secondary rounded-md shadow-lg py-1 z-20'}>
               {item.dropdownItems.map(subItem => (
                 <NavLink
                   key={subItem.path}

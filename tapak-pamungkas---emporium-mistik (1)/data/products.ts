@@ -933,6 +933,32 @@ export const products: Product[] = [
     ],
     material: "6 buah kapsul pengaktifan,7 buah kapsul mata batin, ramuan magic, Buku Panduan Lengkap",
   },
+  {
+    id: 'mk063',
+    name: 'PROGRAM SEPESIAL LENGKAP MATERI PARANORMAL / PERDUKUNAN ' ,
+    description: 'Di program ini lengkap untuk bekal praktek supranatural anda, 1 program berisi 20 keilmuan yang masing-masing mempunyai manfaat berbeda-beda keistimewaannya. Dan bisa langsung buka praktek paranormal/perdukunan. Bagi yang paket langsung bisa digunakan tanpa penyelarasan, bagi jarak jauh, harus diaktifkan dulu dengan baca pembangkitan 1 malam sampai 3 malam.AJIAN SANGKALA NYAWA: Fungsi otomatis khodam ilmu akan membinasahkan dukun/musuh yang sudah mengganggu kita, dan otomatis melindungi kita dari segala kejahatan kasar atau halus, ditakuti jin, musuh, dll. Bisa juga untuk mengebalikan santet, menetralisir santet pada pasien kita atau kiriman dari pasien yang kita bantu, juga bisa untuk penyembuhan khusus santet, guna-guna.AJIAN SANAK PANCER (kekuatan saudara kembar / khodam pendamping): Memanggil sedulur batin kita atau saudara kembar kita / jin qoron / jin pendamping kita untuk membantu pasien kita untuk seribu hajat dan tujuan apa pun. Apapun hajat anda bisa menggunakan ilmu ini bisa langsung jarak jauh menggunakan foto pasien atau kita bacakan pada media misalnya air, garam, gula lalu kasihkan pada pasien. Media bisa diminum atau dibuat mandi, ditaburkan, dll tergantung penggunaan.AJIAN PARANG MAYA (mengisi media senjata untuk perlindungan / pagar gob segala niat): Menjadikan parang biasa agar mempunyai kekuatan perisai pelindung, jika ada santet, jin, guna-guna, maling, rampok, dll maka parang ini akan mengejar dan melumpuhkannya secara otomatis. Bisa menggunakan semua jenis senjata baik itu keris, pisau, kapak, celurit, dll.AJIAN KALA BRAJA: Ajian kejawen kuno dan wingit, sangat jarang yang memiliki ajian ini, sangat sangat dirahasiakan, kekuatannya bagaikan seribu ilmu, manfaat multifungsi segala hajat apa pun baik buruk bisa. Sangat baik untuk membantu pasien-pasien kita dalam hal apa saja.AJIAN LADUNI KAROMAT (lemas, kaku, terpental, dll): Manfaat sama seperti ilmu laduni/karomah kanjeng sunan kali jaga/cakra laduni/sabdo laduni/kun laduni/dll terpental, lemas, kaku, dll. Bisa mengisi ke orang atau benda.AJIAN JATI SEWU: Ilmu kejawen keramat khusus kejawaraan, keselamatan, kekebalan, anti bacok, tusuk, iris, tembak, dll. Untuk mengebleng murid atau pasien kita buat keselamatan.AJIAN CARAK WESI: Ajian yang mempunyai kekuatan inti besi, dan brajamusti, pegangan jawara Banten yang hampir punah. Untuk kekuatan tangan atau pukulan, untuk mengisi pasien atau murid.AJIAN KAKANG KAWAH: Ajian kejawen khusus untuk memanggil jin-jin apa pun untuk kita perintah apa pun bisa. Hajat kiri kanan bisa segala niat kita.AJIAN SAPU LIDI (cara membuat pelarisan media sapu): Ajian kejawen kuno khusus untuk penglaris usaha apa pun bisa, hanya dengan sarana lidi maka anda bisa membantu orang urusan penglaris usaha apa pun. Cara buat pelarisan dahsyat.AJIAN PELET DANDANG PUTIH: Khusus untuk membantu pelet atau urusan perpeletan, anda bisa menggunakan ilmu ini. Ilmu ini bisa disebut rajanya ilmu penunduk/gendam/pelet.AJIAN ALIF PUTER JIWA / PUTER GILING: Ajian khusus untuk urusan puter giling pasangan, pacar, maling, orang minggat, dll.ILMU MENGUNCI PASANGAN: Media celana dalam target.ILMU KHUSUS PENYEMBUHAN MEDIS NON MEDIS: Media air putih.ILMU UCAPAN JADI NYATA: Agar semua ucapan kita menjadi nyata, sangat baik diamalkan agar apapun yang kita ucapkan pada pasien-pasien kita akan menjadi kenyataan atau terbukti nyata agar anda dikenal dan dikagumi oleh pasien-pasien anda. Bisa juga untuk penyembuhan, baca rangkaian di atas pada air lalu minumkan.ILMU MENGISI KHODAM PADA PASIEN: Bila anda ingin mengisi khodam apapun tujuannya apapun jenis khodamnya anda bisa menggunakan cara ini.AJIAN AURA GEMILANG: Ilmu khusus membuka aura, bisa menggunakan media minyak, kapsul, air, atau minyak. Sangat cocok untuk sales, MC, penyanyi, dll.AJIAN AURA DUNYA: Ilmu khusus membuka aura kerejekian, kekayaan, kesuksesan, agar tidak susah masalah keuangan, dll. Bisa anda gunakan membantu pasien yang membutuhkan masalah itu. Pembuka aura badan supaya gampang cari duit, beruntung terus, bejo terus.AJIAN WADAH BATIN: Bagi yang terjun ke dunia spiritual maka wajib mengamalkan ilmu ini agar wadah batin kuat, mengamalkan ribuan ilmu apa pun dan setinggi apa pun akan mampu, tidak ada efek gila atau lainnya. Fungsi walau kita mempelajari ilmu setinggi apapun sebanyak apapun pasti akan mampu dan tidak akan gila, stress, atau efek lainnya. Dan ilmu yang kita pelajari akan tertampung semua dalam diri kita.AJIAN RAJA AURA: Ilmu khusus membuka aura wajah agar dipandang tidak bosan, agar banyak yang suka, terpikat, dll. Sangat bagus untuk membantu pasien yang membutuhkan media seperti ini. Dan ilmu ini bisa anda isikan pada media apapun baik itu minyak, air, kapsul, atau benda-benda yang intinya bisa ditelan, dioles, atau sekadar dibawah.ASMAK MUSTIKA MERAH DELIMA LAUT KIDUL: Sebenarnya keilmuan ini sangat dilarang untuk dijadikan gemblengan umum biasa karena mengingat tuah wingit Sabdo Ucap dari keilmuan ini sangat angker sekali. Adapun khasiat-khasiat lain dari keilmuan ini adalah: Proteksi Full Power 24 Jam Non Stop & Permanent tanpa pantangan; Musuh menyerang/niat jahat langsung terkuras semua tenaga & ilmunya/lemas; Disegani siapapun tidak ada yang berani mengancam apa lagi mencelakai; Kewibawaan & Kharisma yang agung mampu menghipnotis semua mata tertuju; Keselamatan darat/laut; Menghancurkan & meleburkan semua sengkolo/karma di badan; Mampu mengobati cukup dengan tiupan & sentuhan; Menundukan atasan/bos/klien/konsumen agar nurut & percaya kepada kita; Dijaga & dikawal puluhan bangsa wali ghoib; Mendatangkan rizki mengalir deras dari segala penjuru arah; Kesaktian & Kedigdayaan pilih tanding; Keselamatan mutlak dari segala senjata; Selamat dari jin, syetan, iblis, sihir, santet; Pengasihan umum super kuat & dimulyakan masyarakat, dll.; Pagar badan & pagar rumah & penglarisan dagang; Penghancur jin; Keselamatan mutlak dari segala bahaya; Keselamatan dari kebakaran; Selamat dari pencurian, rumah kita akan kelihatan seperti laut, hutan, sungai, api, dll; Selamat dari senjata api, bom, nuklir, dll; Selamat dari sihir, santet, guna-guna, dll; Ilmu tingkat tinggi akan luntur bila menyerang pemilik ilmu ini; Menjaga, melindungi diri, harta, dan keluarga; Bisa dengan mudah mendapat petunjuk gaib; Dipukul akan mantul balik kepada yang memukul; Dibacok akan balik kepada yang membacok; Disantet akan kembali kepada pengirim santet; Ditusuk balik kepada yang menusuk; Diracun jadi manis rasanya; Menajamkan mata batin & indra ke-6; Semua khasiat ilmu-ilmu rajeh/asma/hizib/dll akan meningkat kuat; Pukulan kontak jarak jauh; Yang niat jelek akan celaka sendiri; Sabdo Dadi langit bumi; Pelarisan paling super mantap; Puter giling sukma; Mengisi media apapun dengan manfaat apapun; Mengaktifkan ilmu-ilmu leluhur; Mengaktifkan ilmu-ilmu yang luntur ataupun lemah; Trawangan/rogosukmo/wisata alam ghoib/dll; Pengobatan medis & non medis; Hancurkan ilmu lawan; Hancurkan dukun-dukun jahat; Dan jutaan manfaat sesuai niatnya.',
+    detailedDescription: 'Tanpa Puasa, Langsung Aktif, tanpa ritual yang memberatkan',
+    price: 350000,
+    stock: 120,
+    category: ProductCategory.KEILMUAN_SPIRITUAL,
+    images: [
+      'https://i.ibb.co.com/hxH2q4vH/1758608091.png',
+    ],
+    material: "3 buah kapsul pengaktifan, Buku Panduan Lengkap",
+  },
+  {
+    id: 'mk064',
+    name: 'PROGRAM LIMA ILMU KHUSUS MENGISI BENDA /MEDUA DENGAN KHODAM JIN  JALUR CIREBON' ,
+    description: '1. *ILMU  JIN ABANG* Pelindung (Tameng) kekebalan .keselametan pagar goib .bisa untuk pagar rumah dll 2 *ILMU  SILOKA MAYA* multi fungsi tergantung tujuan. Misal ngisi minyak pelarisan jin .atau pelet jin dll 3 *ILMU SEMILAN KILAT* khusus untuk pengisian ke benda minyak dg tujuan kebal kekuatan kesaktian pagar badan .pengawal jin khodam jin dll 4 *ILMU  NUR JABALKAT* multi fungsi segala tujuan segala niat segala kehendak kita bisa juga untuk saat kepepet tinggal langsung aja baca dan sebut tujuan Apa 5 *ILMU  NUR JIN* ini juga multi fungsi segala niat segala tujuan bisa pelet rezeki,pelaris,pelet aura wibawa dll Mantra semuanya pendek',
+    detailedDescription: 'Tanpa Puasa, Langsung Aktif, tanpa ritual yang memberatkan',
+    price: 200000,
+    stock: 122,
+    category: ProductCategory.KEILMUAN_SPIRITUAL,
+    images: [
+      'https://i.ibb.co.com/xtg9v1vb/unnamed.png',
+    ],
+    material: "3 buah kapsul pengaktifan, Buku Panduan Lengkap",
+  },
 
   // Produk Awal Kategori Media Bertuah
   {
@@ -1483,7 +1509,58 @@ export const products: Product[] = [
     material: "1 botol minyak, kertas panduan lengkap",
     detailedDescription: 'tanpa pantangan, tanpa puasa'
   },
-
+  {
+    id: 'cm038',
+    name: 'MINYAK PELET RAJA BIRAHI',
+    description: 'FULL POWER SANGAT PATENN. Manfaat yang terkandung didalamnya: ✓ Pelet ekstreme (media colekan, tatapan, visualisasi, makanan, foto) ✓ Pelet birahi (dianjurkan gunakan dengan bijak) ✓ Pegangan para biduan, PL, wanita malam untuk memikat klien ✓ Pegangan para sales atau pekerjaan yang langsung berhubungan dengan orang banyak ✓ Pengasihan umum, agar disukai, dilirik, pusat perhatian banyak orang ✓ Kehokian pelarisan, penarik pembeli ✓ Membuka aura kecantikan & ketampananTanpa Pantangan dan tanpa patangan, bebas agama',
+    price: 200000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co.com/sJRWksCN/image.png',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+  {
+    id: 'cm039',
+    name: 'MINYAK BIRAHI GENDERUWO',
+    description: 'Minyak pelet extr Ims, karena mempunyai energi seperti Godoruwo yang lagi birahi, minyak ini bisa diaplikasikan dengan salaman, sentuhan dicampur bedak, parfum, dioles di alis, bisa juga dioles ke barang media yang disentuhkan target, rokok, dll. Daya pelet dari minyak ini sangat kuat mencengkram lawan. Orang yang terkena minyak ini akan rindu siang malam, tidak dapat dipisahkan dari apapun, tergila-gila dan bergairah dengan orang yang menggunakan minyak ini. Nafsu birahinya akan bangkit sampai basah. Minyak ini juga untuk pelet jin atau makhluk gaib jenis apapun agar banyak yang suka dengan kita. Minyak ini sangat kuat daya peletnya, saat minyak dipakai ada kunci bacaan bahasa Jawa.',
+    price: 200000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co.com/Xr7NtgJp/image.png',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+  {
+    id: 'cm040',
+    name: 'Minyak Pelet Demit Merah - Khusus Jarak Jauh',
+    description: 'Minyak khusus jarak jauh menggunakan media foto bekas pakaian atau rambut target. Minyak ini auranya atau energinya panas dan bersifat mengisap. Jangan gunakan sembarangan, target bisa luluh segalanya bila terlalu keras akan sakit panas saat pelet baru masuk. Gunakan saat pasti dan jangan memainkan target dengan minyak ini. Target sudah diobati. Patangan. Jangan menggunakan minyak ini saat pikiran kalut, stres, kacau emosi karena energi Anda akan habis sendiri tersedot energi minyak ini; reaksinya Anda akan pusing, mual-mual, sakit berhari-hari, dan jangan niat mencium aromanya bila tidak ada keperluan. Gunakan sebagai pamungkas saja, sangat keras dan extream',
+    price: 250000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co.com/k2bDL2jS/image.png',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
+  {
+    id: 'cm041',
+    name: 'MINYAK SERAP KEKUATAN GOIB',
+    description: 'Minyak khusus untuk menyerap menyedot energi kekuatan goib, kekuatan khodam, kekuatan jin, kekuatan iblis, kekuatan ajian-ajian ilmu goib, kekuatan pelet, kekuatan kekeayaan, dan sebagainya. Anda juga bisa menarik energi atau kekuatan alam dari angin, air, bulan, matahari, api, tempat angker, tempat keramat, atau dari benda pusaka.Bila Anda ingin mengaktifkan mantra, ajian, ilmu goib, atau khodam dalam diri, pakailah minyak ini agar kekuatan ilmu atau khodam cepat masuk dan aktif dalam diri Anda. Atau, jika Anda ingin memiliki daya atau kemampuan goib tanpa harus belajar susah-susah, Anda bisa menarik atau menyerapnya lalu mengaktifkannya dalam tubuh Anda, sehingga kekuatan tersebut akan aktif selamanya.Sangat mudah, praktis, dan cocok bagi mereka yang berkecimpung dalam dunia supranatural. Minyak ini juga sangat baik untuk menyempurnakan ilmu-ilmu yang Anda pelajari. Cukup dioleskan di telapak tangan atau diminum dengan air sebelum pengaktifan ilmu-ilmu goib.',
+    price: 200000,
+    stock: 22,
+    category: ProductCategory.MEDIA_BERTUAH,
+    images: [
+      'https://i.ibb.co.com/vCLFJyTK/unnamed-j.png',
+    ],
+    material: "1 botol minyak, kertas panduan lengkap",
+    detailedDescription: 'tanpa pantangan, tanpa puasa'
+  },
 ];
 
 export const getProductById = (id: string): Product | undefined => {
