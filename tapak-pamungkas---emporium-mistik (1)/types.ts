@@ -1,3 +1,6 @@
+// Fix: Added missing import for React.
+import React from 'react';
+
 export enum ProductCategory {
   KEILMUAN_SPIRITUAL = "Keilmuan Spiritual",
   MEDIA_BERTUAH = "Media Bertuah",
@@ -51,4 +54,22 @@ export interface MarketplaceLink {
 export interface IconProps {
   className?: string;
   filled?: boolean; 
+}
+
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
+}
+
+// FIX: Added OracleCard interface to resolve import errors.
+export interface OracleCard {
+  id: string;
+  name: string;
+  imageUrl: string;
+  keywords: string[];
+  meaning: string;
+}
+
+export interface CartItem extends Product {
+  quantity: number;
 }

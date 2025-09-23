@@ -1,47 +1,57 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getProductById, getRecommendedProducts } from '../data/products'; // Added getRecommendedProducts
+import { getProductById, getRecommendedProducts } from '../data/products';
 import { Product, ProductCategory } from '../types';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
 import { ImageSlider } from '../components/products/ImageSlider';
 import { Button } from '../components/ui/Button';
-import { WHATSAPP_NUMBER, STORE_NAME, CATEGORIES_SLUGS } from '../constants';
-import { WhatsAppIcon, TagIcon, CubeIcon, AcademicCapIcon, SparklesIcon, FacebookIcon, TwitterIcon, LinkIcon } from '../components/ui/Icon';
+import { STORE_NAME, CATEGORIES_SLUGS } from '../constants';
+import { WhatsAppIcon, TagIcon, CubeIcon, AcademicCapIcon, SparklesIcon, FacebookIcon, TwitterIcon, LinkIcon, ShoppingCartIcon } from '../components/ui/Icon';
 import { AnimatedSection } from '../components/common/AnimatedSection';
 import { SectionTitle } from '../components/common/SectionTitle';
 import { ImagePreviewModal } from '../components/ui/ImagePreviewModal';
-import { ProductCard } from '../components/products/ProductCard'; // Added ProductCard for recommendations
+import { ProductCard } from '../components/products/ProductCard';
+import { useCart } from '../contexts/CartContext';
 
 export const ProductDetailPage: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
   const [product, setProduct] = useState<Product | null>(null);
-  const [recommendedProducts, setRecommendedProducts] = useState<Product[]>([]); // State for recommended products
+  const [recommendedProducts, setRecommendedProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isCopied, setIsCopied] = useState(false);
   const [isPreviewModalOpen, setIsPreviewModalOpen] = useState(false);
   const [modalInitialImageIndex, setModalInitialImageIndex] = useState(0);
+  const { addToCart } = useCart();
+  const [isAdded, setIsAdded] = useState(false);
 
   useEffect(() => {
     if (productId) {
       setIsLoading(true);
-      // Simulate API call
       setTimeout(() => {
         const fetchedProduct = getProductById(productId);
         setProduct(fetchedProduct || null);
         
         if (fetchedProduct) {
           document.title = `${fetchedProduct.name} | ${STORE_NAME}`;
-          // Fetch recommended products
-          const recommendations = getRecommendedProducts(fetchedProduct.id, fetchedProduct.category, 3); // Get 3 recommendations
+          const recommendations = getRecommendedProducts(fetchedProduct.id, fetchedProduct.category, 3);
           setRecommendedProducts(recommendations);
         } else {
           document.title = `Produk Gak Ketemu | ${STORE_NAME}`;
-          setRecommendedProducts([]); // Clear recommendations if product not found
+          setRecommendedProducts([]);
         }
         setIsLoading(false);
+        setIsAdded(false); // Reset added state on product change
       }, 500);
     }
   }, [productId]);
+  
+  const handleAddToCart = () => {
+    if (product) {
+        addToCart(product);
+        setIsAdded(true);
+        setTimeout(() => setIsAdded(false), 2000); // Show message for 2 seconds
+    }
+  };
 
   const openPreviewModal = (index: number) => {
     setModalInitialImageIndex(index);
@@ -67,9 +77,6 @@ export const ProductDetailPage: React.FC = () => {
       </AnimatedSection>
     );
   }
-
-  const mainWhatsappMessage = `Halo ${STORE_NAME}, aku naksir nih sama produk ini: ${product.name} (ID: ${product.id}). Ada diskon Rp 15.000 kan? Mau tanya-tanya dong!`;
-  const mainWhatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mainWhatsappMessage)}`;
   
   const productUrl = window.location.href;
   const shareTextBase = `Cek produk keren ini dari ${STORE_NAME}: ${product.name}`;
@@ -80,10 +87,9 @@ export const ProductDetailPage: React.FC = () => {
     try {
       await navigator.clipboard.writeText(productUrl);
       setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 3000); // Hide message after 3 seconds
+      setTimeout(() => setIsCopied(false), 3000);
     } catch (err) {
       console.error('Gagal menyalin link:', err);
-      // Optionally, show an error message to the user
     }
   };
 
@@ -91,7 +97,6 @@ export const ProductDetailPage: React.FC = () => {
     <>
       <AnimatedSection className="container mx-auto py-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Image Slider */}
           <div className="md:sticky md:top-24">
             <ImageSlider 
               images={product.images} 
@@ -101,7 +106,6 @@ export const ProductDetailPage: React.FC = () => {
              <p className="text-xs text-text-secondary text-center mt-2 italic">Klik gambar untuk memperbesar.</p>
           </div>
 
-          {/* Product Details */}
           <div className="space-y-6">
             <Link 
               to={`/category/${CATEGORIES_SLUGS[product.category]}`} 
@@ -121,14 +125,6 @@ export const ProductDetailPage: React.FC = () => {
               ) : (
                 <span className="text-sm font-semibold bg-red-500/20 text-red-400 px-3 py-1 rounded-full">Barangnya Habis :(</span>
               )}
-            </div>
-
-            <div className="my-6 p-4 bg-gradient-to-r from-brand-accent via-red-500 to-red-700 text-white rounded-lg shadow-lg flex items-center space-x-3 animate-subtle-pulse">
-              <TagIcon className="w-8 h-8 flex-shrink-0" />
-              <div>
-                <h3 className="font-bold text-lg sm:text-xl">DISKON SPESIAL!</h3>
-                <p className="text-sm sm:text-base">Dapatkan potongan harga Rp 15.000 untuk produk ini!</p>
-              </div>
             </div>
 
             <p className="text-text-secondary leading-relaxed text-lg">{product.description}</p>
@@ -152,18 +148,19 @@ export const ProductDetailPage: React.FC = () => {
             </div>
 
             {product.stock > 0 ? (
-              <a href={mainWhatsappLink} target="_blank" rel="noopener noreferrer">
-                <Button variant="primary" size="lg" fullWidth leftIcon={<WhatsAppIcon className="h-6 w-6" />}>
-                  Pesan via WhatsApp Yuk!
-                </Button>
-              </a>
+                <div className="flex flex-col items-center">
+                    <Button variant="primary" size="lg" fullWidth leftIcon={<ShoppingCartIcon className="h-6 w-6" />} onClick={handleAddToCart}>
+                        {isAdded ? "Berhasil Ditambahkan!" : "Tambah ke Keranjang"}
+                    </Button>
+                    {isAdded && <p className="text-green-400 text-sm mt-2 animate-fade-in-up">Produk sudah masuk keranjang.</p>}
+                </div>
             ) : (
               <Button variant="secondary" size="lg" fullWidth disabled>
                 Yah, Stoknya Habis
               </Button>
             )}
-            <p className="text-xs text-text-secondary text-center mt-2">
-              FYI: Ordernya langsung lewat WhatsApp ya, biar ngobrolnya lebih enak dan personal! (Jangan lupa sebutin diskonnya!)
+             <p className="text-xs text-text-secondary text-center mt-2">
+                Kumpulkan barang di keranjang dulu, baru pesan semua sekaligus via WhatsApp!
             </p>
 
             <div className="pt-6 border-t border-brand-secondary/30 mt-6">
@@ -214,7 +211,6 @@ export const ProductDetailPage: React.FC = () => {
         </div>
       </AnimatedSection>
 
-      {/* Recommended Products Section */}
       {recommendedProducts.length > 0 && (
         <AnimatedSection className="container mx-auto py-12 mt-12 border-t border-brand-secondary/30">
           <SectionTitle title="Kamu Mungkin Suka Juga Nih!" subtitle="Produk lain yang mirip atau sering dilihat bareng yang ini." />

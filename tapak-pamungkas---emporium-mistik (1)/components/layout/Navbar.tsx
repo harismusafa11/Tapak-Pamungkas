@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { STORE_NAME, CATEGORIES_SLUGS } from '../../constants';
 import { NavLinkItem, ProductCategory } from '../../types';
-import { MenuIcon, XIcon, ChevronDownIcon, SearchIcon } from '../ui/Icon'; // SparklesIcon removed from here if only used for logo
+import { MenuIcon, XIcon, ChevronDownIcon, SearchIcon, ShoppingCartIcon } from '../ui/Icon';
+import { useCart } from '../../contexts/CartContext';
 
 const navLinks: NavLinkItem[] = [
   { label: "Beranda", path: "/" },
@@ -15,12 +16,12 @@ const navLinks: NavLinkItem[] = [
       { label: ProductCategory.MEDIA_BERTUAH, path: `/category/${CATEGORIES_SLUGS[ProductCategory.MEDIA_BERTUAH]}` },
     ]
   },
+  { label: "Konsultan AI", path: "/konsultan-ai" },
   { label: "Tentang Kita", path: "/about" },
   { label: "Kontak", path: "/contact" },
   { label: "FAQ", path: "/faq" },
 ];
 
-// Define SearchForm outside Navbar to prevent re-creation on every render
 interface SearchFormProps {
   query: string;
   onQueryChange: (value: string) => void;
@@ -54,6 +55,8 @@ export const Navbar: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
+  const { cart } = useCart();
+  const cartItemCount = cart.reduce((count, item) => count + item.quantity, 0);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   
@@ -75,8 +78,8 @@ export const Navbar: React.FC = () => {
     e.preventDefault();
     if (searchQuery.trim()) {
       navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
-      setSearchQuery(''); // Clear search input after navigation
-      if (isMobileMenuOpen) setIsMobileMenuOpen(false); // Close mobile menu
+      setSearchQuery('');
+      if (isMobileMenuOpen) setIsMobileMenuOpen(false);
     }
   };
 
@@ -147,12 +150,27 @@ export const Navbar: React.FC = () => {
                 onQueryChange={setSearchQuery}
                 onSubmit={handleSearchSubmit}
             />
+            <Link to="/cart" className="ml-4 relative p-2 text-text-secondary hover:text-text-primary transition-colors" aria-label={`Keranjang Belanja, ${cartItemCount} item`}>
+                <ShoppingCartIcon className="h-6 w-6" />
+                {cartItemCount > 0 && (
+                    <span className="absolute top-0 right-0 block h-5 w-5 rounded-full bg-brand-accent text-white text-xs flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">
+                        {cartItemCount}
+                    </span>
+                )}
+            </Link>
           </div>
           <div className="md:hidden flex items-center">
-             {/* Optionally, show a search icon to expand search on mobile if not in menu */}
+            <Link to="/cart" className="relative p-2 text-text-secondary hover:text-text-primary transition-colors" aria-label={`Keranjang Belanja, ${cartItemCount} item`}>
+                <ShoppingCartIcon className="h-6 w-6" />
+                {cartItemCount > 0 && (
+                    <span className="absolute top-0 right-0 block h-5 w-5 rounded-full bg-brand-accent text-white text-xs flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">
+                        {cartItemCount}
+                    </span>
+                )}
+            </Link>
             <button
               onClick={toggleMobileMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-brand-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="ml-2 inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-brand-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-expanded={isMobileMenuOpen}
               aria-label={isMobileMenuOpen ? "Tutup menu" : "Buka menu"}
             >
