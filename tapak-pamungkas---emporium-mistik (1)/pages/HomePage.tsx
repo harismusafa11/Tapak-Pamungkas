@@ -38,7 +38,7 @@ export const HomePage: React.FC = () => {
       <AnimatedSection animationClass="animate-fade-in-down">
         <div 
           className="relative bg-cover bg-center py-24 md:py-40 rounded-xl shadow-2xl overflow-hidden" 
-          style={{ backgroundImage: "url('https://i.ibb.co/zT0HK14Z/20210712-125312.jpg')" }}
+          style={{ backgroundImage: "url('https://files.catbox.moe/dnjpbe.jpg')" }}
         >
           <div className="absolute inset-0 bg-brand-dark bg-opacity-70 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-6 text-center">

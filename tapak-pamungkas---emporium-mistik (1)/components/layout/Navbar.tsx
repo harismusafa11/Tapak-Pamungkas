@@ -142,7 +142,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center text-xl sm:text-2xl font-bold text-brand-accent font-serif hover:opacity-80 transition-opacity">
-              <img src="https://i.ibb.co/XxpzTXQk/logotp.png" alt={`Logo ${STORE_NAME}`} className="h-10 w-10 mr-2 object-contain" />
+              <img src="https://files.catbox.moe/eq3p0j.png" alt={`Logo ${STORE_NAME}`} className="h-10 w-10 mr-2 object-contain" />
               {STORE_NAME}
             </Link>
           </div>

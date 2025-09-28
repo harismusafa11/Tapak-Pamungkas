@@ -19,7 +19,7 @@ export const AboutPage: React.FC = () => {
 
       <div className="max-w-3xl mx-auto bg-brand-secondary/10 p-8 rounded-lg shadow-xl">
         <div className="flex justify-center mb-8">
-            <img src={`https://i.ibb.co/XxpzTXQk/logotp.png`} alt={`Toko ${STORE_NAME} kita`} className="rounded-full shadow-lg w-40 h-40 object-cover border-4 border-brand-accent"/>
+            <img src={`https://files.catbox.moe/eq3p0j.png`} alt={`Toko ${STORE_NAME} kita`} className="rounded-full shadow-lg w-40 h-40 object-cover border-4 border-brand-accent"/>
         </div>
         
         <p className="text-text-primary leading-relaxed mb-6 text-justify">
